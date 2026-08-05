@@ -1,21 +1,10 @@
-- name: Azure Login
-  uses: azure/login@v2
-  with:
-    creds: ${{ secrets.AZURE_CREDENTIALS }}
+name: Terraform Deployment
 
-- name: Setup Terraform
-  uses: hashicorp/setup-terraform@v3
+on:
+  push:
+    branches:
+      - terraform
 
-<<<<<<< HEAD
-- name: Terraform Init
-  run: terraform init
-
-- name: Terraform Validate
-  run: terraform validate
-
-- name: Terraform Plan
-  run: terraform plan
-=======
 jobs:
   terraform:
     runs-on: ubuntu-latest
@@ -43,4 +32,3 @@ jobs:
 
       - name: Terraform Apply
         run: terraform apply -auto-approve
->>>>>>> 45323a7 (Added Azure Login and Terraform deployment)
