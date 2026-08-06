@@ -1,0 +1,42 @@
+2026-08-05T05:51:32.5380343Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-08-05T05:51:37.1777146Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-08-05T05:51:37.1869404Z Container start method called.
+2026-08-05T05:51:37.2056267Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.5:13209/appsvc/php:8.2-fpm_20260428.5.tuxprod for webappkrant20260805., DetailsLevel: INFO
+2026-08-05T05:51:37.2068140Z Establishing network.
+2026-08-05T05:51:37.2074368Z Pulling image: appsvc/php:8.2-fpm_20260428.5.tuxprod.
+2026-08-05T05:51:37.7987884Z Container is starting.
+2026-08-05T05:51:37.7991113Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for webappkrant20260805., DetailsLevel: INFO
+2026-08-05T05:51:37.8000423Z Establishing user namespace if not established already.
+2026-08-05T05:51:37.8004309Z Establishing network if not established already.
+2026-08-05T05:51:37.8009125Z Mounting volumes.
+2026-08-05T05:51:37.8186167Z Nested mountpoint 
+2026-08-05T05:51:37.8710912Z Nested mountpoint volatile/logs
+2026-08-05T05:51:37.9074988Z Nested mountpoint 
+2026-08-05T05:51:37.9174534Z Nested mountpoint 
+2026-08-05T05:51:38.0770052Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for webappkrant20260805. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-08-05T05:51:38.0776656Z Creating container.
+2026-08-05T05:51:38.0867988Z Creating pipes for streaming container io.
+2026-08-05T05:51:38.0959433Z Creating stdout named pipe at /podr/container/pipe/d3e37cba0a3b_webappkrant20260805/stdout_e5b257719b704b5c80e033bc5640014b.
+2026-08-05T05:51:38.0978742Z Successfully created stdout named pipe at: /podr/container/pipe/d3e37cba0a3b_webappkrant20260805/stdout_e5b257719b704b5c80e033bc5640014b.
+2026-08-05T05:51:38.1374023Z Opening named pipe /podr/container/pipe/d3e37cba0a3b_webappkrant20260805/stdout_e5b257719b704b5c80e033bc5640014b for reading in non-blocking mode.
+2026-08-05T05:51:38.1375653Z Successfully opened named pipe: /podr/container/pipe/d3e37cba0a3b_webappkrant20260805/stdout_e5b257719b704b5c80e033bc5640014b.
+2026-08-05T05:51:38.1560110Z Successfully removed non-blocking flag from /podr/container/pipe/d3e37cba0a3b_webappkrant20260805/stdout_e5b257719b704b5c80e033bc5640014b.
+2026-08-05T05:51:38.2065294Z Creating stderr named pipe at /podr/container/pipe/d3e37cba0a3b_webappkrant20260805/stderr_982a5d33ca67429d87f549f4dfa64985.
+2026-08-05T05:51:38.2072701Z Successfully created stderr named pipe at: /podr/container/pipe/d3e37cba0a3b_webappkrant20260805/stderr_982a5d33ca67429d87f549f4dfa64985.
+2026-08-05T05:51:38.2248243Z Opening named pipe /podr/container/pipe/d3e37cba0a3b_webappkrant20260805/stderr_982a5d33ca67429d87f549f4dfa64985 for reading in non-blocking mode.
+2026-08-05T05:51:38.2263326Z Successfully opened named pipe: /podr/container/pipe/d3e37cba0a3b_webappkrant20260805/stderr_982a5d33ca67429d87f549f4dfa64985.
+2026-08-05T05:51:38.2331968Z Successfully removed non-blocking flag from /podr/container/pipe/d3e37cba0a3b_webappkrant20260805/stderr_982a5d33ca67429d87f549f4dfa64985.
+2026-08-05T05:51:38.2359192Z Creating container with image: appsvc/php:8.2-fpm_20260428.5.tuxprod from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/appsvc/php:8.2-fpm_20260428.5.tuxprod
+2026-08-05T05:51:40.7527821Z Starting container: d3e37cba0a3b_webappkrant20260805.
+2026-08-05T05:51:41.2712377Z Starting watchers and probes.
+2026-08-05T05:51:41.4456800Z Starting metrics collection.
+2026-08-05T05:51:41.4868646Z Container is running.
+2026-08-05T05:51:41.5130350Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container webappkrant20260805 successfully created and is running., DetailsLevel: INFO
+2026-08-05T05:51:42.3123388Z Container start method finished after 5118 ms.
+2026-08-05T05:51:42.3155441Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container webappkrant20260805 successfully created and is running., DetailsLevel: INFO
+2026-08-05T05:51:42.4010928Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-08-05T05:52:37.7325317Z Site startup probe succeeded after 55.2002447 seconds.
+2026-08-05T05:52:38.5772406Z State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 55.2002447 seconds., DetailsLevel: INFO
+2026-08-05T05:52:40.6701975Z Site started.
+2026-08-05T05:52:40.6880379Z State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 08/05/2026 05:52:40 (UTC), DetailsLevel: INFO
+2026-08-05T05:52:41.1843176Z Site is running with patch version PHP-8.2.30

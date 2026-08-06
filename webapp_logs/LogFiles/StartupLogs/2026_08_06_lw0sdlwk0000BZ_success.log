@@ -1,0 +1,263 @@
+========== New Cold Start Attempt (2026-08-06T05:01:07.6201525+00:00) ==========
+2026-08-06T05:01:07.6201525+00:00 ContainerStatus: State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-08-06T05:01:11.3457898+00:00 ContainerStatus: State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-08-06T05:01:11.3464844+00:00 ContainerStatus: Container start method called.
+2026-08-06T05:01:11.3478837+00:00 ContainerStatus: State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.4:13209/appsvc/php:8.2-fpm_20260428.5.tuxprod for webappkrant20260805., DetailsLevel: INFO
+2026-08-06T05:01:11.3483392+00:00 ContainerStatus: Establishing network.
+2026-08-06T05:01:11.3485021+00:00 ContainerStatus: Pulling image: appsvc/php:8.2-fpm_20260428.5.tuxprod.
+2026-08-06T05:01:13.2410246+00:00 ContainerStatus: Image appsvc/php:8.2-fpm_20260428.5.tuxprod is pulled from registry 10.1.0.4:13209
+2026-08-06T05:01:13.2415235+00:00 ContainerStatus: Container is starting.
+2026-08-06T05:01:13.2419057+00:00 ContainerStatus: State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for webappkrant20260805., DetailsLevel: INFO
+2026-08-06T05:01:13.2420461+00:00 ContainerStatus: Establishing user namespace if not established already.
+2026-08-06T05:01:13.2423707+00:00 ContainerStatus: Establishing network if not established already.
+2026-08-06T05:01:13.2430016+00:00 ContainerStatus: Mounting volumes.
+2026-08-06T05:01:13.2433852+00:00 ContainerStatus: Nested mountpoint 
+2026-08-06T05:01:13.3014894+00:00 ContainerStatus: Nested mountpoint volatile/logs
+2026-08-06T05:01:13.3611150+00:00 ContainerStatus: Nested mountpoint 
+2026-08-06T05:01:13.3714129+00:00 ContainerStatus: Nested mountpoint 
+2026-08-06T05:01:13.7138454+00:00 ContainerStatus: State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for webappkrant20260805. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-08-06T05:01:13.7142299+00:00 ContainerStatus: Creating container.
+2026-08-06T05:01:13.7143153+00:00 ContainerStatus: Creating pipes for streaming container io.
+2026-08-06T05:01:13.7143812+00:00 ContainerStatus: Creating stdout named pipe at /podr/container/pipe/b36cbd7907e5_webappkrant20260805/stdout_9419f99413854b3bb8a0c37969cfe87a.
+2026-08-06T05:01:13.7331876+00:00 ContainerStatus: Successfully created stdout named pipe at: /podr/container/pipe/b36cbd7907e5_webappkrant20260805/stdout_9419f99413854b3bb8a0c37969cfe87a.
+2026-08-06T05:01:13.7332682+00:00 ContainerStatus: Opening named pipe /podr/container/pipe/b36cbd7907e5_webappkrant20260805/stdout_9419f99413854b3bb8a0c37969cfe87a for reading in non-blocking mode.
+2026-08-06T05:01:13.7333494+00:00 ContainerStatus: Successfully opened named pipe: /podr/container/pipe/b36cbd7907e5_webappkrant20260805/stdout_9419f99413854b3bb8a0c37969cfe87a.
+2026-08-06T05:01:13.7334150+00:00 ContainerStatus: Successfully removed non-blocking flag from /podr/container/pipe/b36cbd7907e5_webappkrant20260805/stdout_9419f99413854b3bb8a0c37969cfe87a.
+2026-08-06T05:01:13.7357494+00:00 ContainerStatus: Creating stderr named pipe at /podr/container/pipe/b36cbd7907e5_webappkrant20260805/stderr_0aee389cecd24621a202f8fed3fb9c61.
+2026-08-06T05:01:13.7360949+00:00 ContainerStatus: Successfully created stderr named pipe at: /podr/container/pipe/b36cbd7907e5_webappkrant20260805/stderr_0aee389cecd24621a202f8fed3fb9c61.
+2026-08-06T05:01:13.7364733+00:00 ContainerStatus: Opening named pipe /podr/container/pipe/b36cbd7907e5_webappkrant20260805/stderr_0aee389cecd24621a202f8fed3fb9c61 for reading in non-blocking mode.
+2026-08-06T05:01:13.7369176+00:00 ContainerStatus: Successfully opened named pipe: /podr/container/pipe/b36cbd7907e5_webappkrant20260805/stderr_0aee389cecd24621a202f8fed3fb9c61.
+2026-08-06T05:01:13.7630526+00:00 ContainerStatus: Successfully removed non-blocking flag from /podr/container/pipe/b36cbd7907e5_webappkrant20260805/stderr_0aee389cecd24621a202f8fed3fb9c61.
+2026-08-06T05:01:13.7636299+00:00 ContainerStatus: Creating container with image: appsvc/php:8.2-fpm_20260428.5.tuxprod from registry: 10.1.0.4:13209 and fully qualified image name: 10.1.0.4:13209/appsvc/php:8.2-fpm_20260428.5.tuxprod
+2026-08-06T05:01:15.4043952+00:00 ContainerStatus: Starting container: b36cbd7907e5_webappkrant20260805.
+2026-08-06T05:01:15.4792731+00:00 ContainerStatus: Starting watchers and probes.
+2026-08-06T05:01:15.4872410+00:00 ContainerStatus: Starting metrics collection.
+2026-08-06T05:01:15.4879024+00:00 ContainerStatus: Container is running.
+2026-08-06T05:01:15.4886161+00:00 ContainerStatus: State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container webappkrant20260805 successfully created and is running., DetailsLevel: INFO
+2026-08-06T05:01:15.6925816+00:00 ContainerStatus: Container start method finished after 4318 ms.
+2026-08-06T05:01:15.6940450+00:00 ContainerStatus: State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container webappkrant20260805 successfully created and is running., DetailsLevel: INFO
+2026-08-06T05:01:15.6940780+00:00 ContainerStatus: State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-08-06T05:01:18.0091723+00:00 ContainerStream:    _____                               
+2026-08-06T05:01:18.0093743+00:00 ContainerStream:   /  _  \ __________ _________   ____  
+2026-08-06T05:01:18.0093806+00:00 ContainerStream:  /  /_\  \\___   /  |  \_  __ \_/ __ \ 
+2026-08-06T05:01:18.0093834+00:00 ContainerStream: /    |    \/    /|  |  /|  | \/\  ___/ 
+2026-08-06T05:01:18.0093859+00:00 ContainerStream: \____|__  /_____ \____/ |__|    \___  >
+2026-08-06T05:01:18.0093899+00:00 ContainerStream:         \/      \/                  \/ 
+2026-08-06T05:01:18.0093925+00:00 ContainerStream: A P P   S E R V I C E   O N   L I N U X
+2026-08-06T05:01:18.0093974+00:00 ContainerStream: 
+2026-08-06T05:01:18.0094011+00:00 ContainerStream: Documentation : http://aka.ms/webapp-linux
+2026-08-06T05:01:18.0094041+00:00 ContainerStream: PHP quickstart: https://aka.ms/php-qs
+2026-08-06T05:01:18.0094100+00:00 ContainerStream: PHP version   : 8.2.30
+2026-08-06T05:01:18.0094126+00:00 ContainerStream: Instance Name : lw0sdlwk0000BZ
+2026-08-06T05:01:18.0094164+00:00 ContainerStream: Instance Id   : 2ddc320b3ce56068eef7d30467cf47281e2049dbabf0cdd575a97ac496677136
+2026-08-06T05:01:18.0094188+00:00 ContainerStream: 
+2026-08-06T05:01:18.0094214+00:00 ContainerStream: Note: Any data outside '/home' is not persisted
+2026-08-06T05:01:20.9222985+00:00 ContainerStream: Starting OpenBSD Secure Shell server: sshd.
+2026-08-06T05:01:20.9533313+00:00 ContainerStream: WEBSITES_INCLUDE_CLOUD_CERTS is not set to true.
+2026-08-06T05:01:21.1008987+00:00 ContainerStream: Updating certificates in /etc/ssl/certs...
+2026-08-06T05:01:47.9623134+00:00 ContainerStream: rehash: warning: skipping duplicate certificate in azl_Sectigo_Public_Server_Authentication_Root_R46.pem
+2026-08-06T05:01:47.9623647+00:00 ContainerStream: rehash: warning: skipping duplicate certificate in azl_Sectigo_Public_Server_Authentication_Root_E46.pem
+2026-08-06T05:01:47.9623685+00:00 ContainerStream: rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_RSA_Root_CA_2022.pem
+2026-08-06T05:01:48.0217098+00:00 ContainerStream: rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_ECC_Root_CA_2022.pem
+2026-08-06T05:01:48.0683920+00:00 ContainerStream: 4 added, 0 removed; done.
+2026-08-06T05:01:48.0814575+00:00 ContainerStream: Running hooks in /etc/ca-certificates/update.d...
+2026-08-06T05:01:48.1192200+00:00 ContainerStream: done.
+2026-08-06T05:01:48.1676697+00:00 ContainerStream: CA certificates copied and updated successfully.
+2026-08-06T05:01:48.1766886+00:00 ContainerStream: Running oryx create-script -appPath /home/site/wwwroot -output /opt/startup/startup.sh     -bindPort 8080 -startupCommand 'php-fpm;'
+2026-08-06T05:01:48.3958346+00:00 ContainerStream: Could not find build manifest file at '/home/site/wwwroot/oryx-manifest.toml'
+2026-08-06T05:01:48.4219654+00:00 ContainerStream: Could not find operation ID in manifest. Generating an operation id...
+2026-08-06T05:01:48.4235110+00:00 ContainerStream: Build Operation ID: e9ca22cc-c730-40a5-9f4a-1aa449fc8c94
+2026-08-06T05:01:49.4079837+00:00 ContainerStream: Writing output script to '/opt/startup/startup.sh'
+2026-08-06T05:01:49.8386745+00:00 ContainerStream: Starting nginx: nginx.
+2026-08-06T05:01:49.9574572+00:00 ContainerStatus: Site startup probe succeeded after 34.1213457 seconds.
+2026-08-06T05:01:50.2896897+00:00 ContainerStatus: State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 34.1213457 seconds., DetailsLevel: INFO
+2026-08-06T05:01:50.8263098+00:00 ContainerStatus: Site is running with deployment version: c90845ba-f4e6-4dec-ac8b-5d4a54660963
+2026-08-06T05:01:50.8320504+00:00 ContainerStatus: Site started.
+2026-08-06T05:01:50.8339231+00:00 ContainerStatus: State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 08/06/2026 05:01:50 (UTC), DetailsLevel: INFO
+2026-08-06T05:01:50.8425197+00:00 ContainerStatus: Site is running with patch version PHP-8.2.30
+========== New Cold Start Attempt (2026-08-06T05:01:51.2933040+00:00) ==========
+2026-08-06T05:01:51.2933040+00:00 ContainerStream: [06-Aug-2026 05:01:51] NOTICE: fpm is running, pid 1873
+2026-08-06T05:01:51.3042900+00:00 ContainerStream: [06-Aug-2026 05:01:51] NOTICE: ready to handle connections
+2026-08-06T05:02:11.2502735+00:00 ContainerStatus: State: Stopping, Action: StoppingSite, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 08/05/2026 05:52:40 (UTC), DetailsLevel: INFO
+2026-08-06T05:02:11.3822992+00:00 ContainerStatus: State: Stopping, Action: StoppingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 08/05/2026 05:52:40 (UTC), DetailsLevel: INFO
+2026-08-06T05:02:11.4395238+00:00 ContainerStatus: Container is terminating. Grace period: 5 seconds.
+2026-08-06T05:02:11.5626597+00:00 ContainerStatus: Stop and delete container. Retry count = 0
+2026-08-06T05:02:11.5641913+00:00 ContainerStatus: Stopping container: d3e37cba0a3b_webappkrant20260805.
+2026-08-06T05:02:17.3260018+00:00 ContainerStatus: Deleting container: d3e37cba0a3b_webappkrant20260805. Retry count = 0
+2026-08-06T05:02:18.3752002+00:00 ContainerStatus: Container spec TerminationMessagePolicy  path 
+2026-08-06T05:02:18.4718701+00:00 ContainerStatus: Container is terminated. Total time elapsed: 7029 ms.
+2026-08-06T05:02:18.6174253+00:00 ContainerStatus: Site: webappkrant20260805 stopped.
+2026-08-06T06:17:29.2517840+00:00 ContainerStatus: State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-08-06T06:17:33.0970362+00:00 ContainerStatus: State: Starting, Action: StartingMsiContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-08-06T06:17:52.5386967+00:00 ContainerStatus: State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-08-06T06:17:52.5392201+00:00 ContainerStatus: Container start method called.
+2026-08-06T06:17:52.5401584+00:00 ContainerStatus: State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.5:13209/appsvc/php:8.2-fpm_20260428.5.tuxprod for webappkrant20260805., DetailsLevel: INFO
+2026-08-06T06:17:52.5406485+00:00 ContainerStatus: Establishing network.
+2026-08-06T06:17:52.5409653+00:00 ContainerStatus: Pulling image: appsvc/php:8.2-fpm_20260428.5.tuxprod.
+2026-08-06T06:17:52.8020433+00:00 ContainerStatus: Container is starting.
+2026-08-06T06:17:52.8102781+00:00 ContainerStatus: State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for webappkrant20260805., DetailsLevel: INFO
+2026-08-06T06:17:52.8104787+00:00 ContainerStatus: Establishing user namespace if not established already.
+2026-08-06T06:17:52.8110655+00:00 ContainerStatus: Establishing network if not established already.
+2026-08-06T06:17:52.8112013+00:00 ContainerStatus: Mounting volumes.
+2026-08-06T06:17:52.8113896+00:00 ContainerStatus: Nested mountpoint 
+2026-08-06T06:17:52.8420403+00:00 ContainerStatus: Nested mountpoint volatile/logs
+2026-08-06T06:17:52.9093403+00:00 ContainerStatus: Nested mountpoint 
+2026-08-06T06:17:52.9100258+00:00 ContainerStatus: Nested mountpoint 
+2026-08-06T06:17:53.1557467+00:00 ContainerStatus: State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for webappkrant20260805. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-08-06T06:17:53.1571847+00:00 ContainerStatus: Creating container.
+2026-08-06T06:17:53.1576585+00:00 ContainerStatus: Creating pipes for streaming container io.
+2026-08-06T06:17:53.1590542+00:00 ContainerStatus: Creating stdout named pipe at /podr/container/pipe/17c0fb48da29_webappkrant20260805/stdout_b9cadac426574d85bf203a337f402819.
+2026-08-06T06:17:53.1789244+00:00 ContainerStatus: Successfully created stdout named pipe at: /podr/container/pipe/17c0fb48da29_webappkrant20260805/stdout_b9cadac426574d85bf203a337f402819.
+2026-08-06T06:17:53.2083501+00:00 ContainerStatus: Opening named pipe /podr/container/pipe/17c0fb48da29_webappkrant20260805/stdout_b9cadac426574d85bf203a337f402819 for reading in non-blocking mode.
+2026-08-06T06:17:53.2087114+00:00 ContainerStatus: Successfully opened named pipe: /podr/container/pipe/17c0fb48da29_webappkrant20260805/stdout_b9cadac426574d85bf203a337f402819.
+2026-08-06T06:17:53.2253262+00:00 ContainerStatus: Successfully removed non-blocking flag from /podr/container/pipe/17c0fb48da29_webappkrant20260805/stdout_b9cadac426574d85bf203a337f402819.
+2026-08-06T06:17:53.2285386+00:00 ContainerStatus: Creating stderr named pipe at /podr/container/pipe/17c0fb48da29_webappkrant20260805/stderr_f24d62ea813749afb4367fbd0dbe411a.
+2026-08-06T06:17:53.2459077+00:00 ContainerStatus: Successfully created stderr named pipe at: /podr/container/pipe/17c0fb48da29_webappkrant20260805/stderr_f24d62ea813749afb4367fbd0dbe411a.
+2026-08-06T06:17:53.2466510+00:00 ContainerStatus: Opening named pipe /podr/container/pipe/17c0fb48da29_webappkrant20260805/stderr_f24d62ea813749afb4367fbd0dbe411a for reading in non-blocking mode.
+2026-08-06T06:17:53.2471885+00:00 ContainerStatus: Successfully opened named pipe: /podr/container/pipe/17c0fb48da29_webappkrant20260805/stderr_f24d62ea813749afb4367fbd0dbe411a.
+2026-08-06T06:17:53.2477526+00:00 ContainerStatus: Successfully removed non-blocking flag from /podr/container/pipe/17c0fb48da29_webappkrant20260805/stderr_f24d62ea813749afb4367fbd0dbe411a.
+2026-08-06T06:17:53.2573297+00:00 ContainerStatus: Creating container with image: appsvc/php:8.2-fpm_20260428.5.tuxprod from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/appsvc/php:8.2-fpm_20260428.5.tuxprod
+2026-08-06T06:17:54.2223721+00:00 ContainerStatus: Starting container: 17c0fb48da29_webappkrant20260805.
+2026-08-06T06:17:54.4170113+00:00 ContainerStatus: Starting watchers and probes.
+2026-08-06T06:17:54.4174466+00:00 ContainerStatus: Starting metrics collection.
+2026-08-06T06:17:54.4351708+00:00 ContainerStatus: Container is running.
+2026-08-06T06:17:54.4353956+00:00 ContainerStatus: State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container webappkrant20260805 successfully created and is running., DetailsLevel: INFO
+2026-08-06T06:17:54.6852646+00:00 ContainerStatus: Container start method finished after 2145 ms.
+2026-08-06T06:17:54.7133221+00:00 ContainerStatus: State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container webappkrant20260805 successfully created and is running., DetailsLevel: INFO
+2026-08-06T06:17:54.7133845+00:00 ContainerStatus: State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-08-06T06:17:56.1029813+00:00 ContainerStream:    _____                               
+2026-08-06T06:17:56.1033721+00:00 ContainerStream:   /  _  \ __________ _________   ____  
+2026-08-06T06:17:56.1033796+00:00 ContainerStream:  /  /_\  \\___   /  |  \_  __ \_/ __ \ 
+2026-08-06T06:17:56.1033888+00:00 ContainerStream: /    |    \/    /|  |  /|  | \/\  ___/ 
+2026-08-06T06:17:56.1033917+00:00 ContainerStream: \____|__  /_____ \____/ |__|    \___  >
+2026-08-06T06:17:56.1033950+00:00 ContainerStream:         \/      \/                  \/ 
+2026-08-06T06:17:56.1033976+00:00 ContainerStream: A P P   S E R V I C E   O N   L I N U X
+2026-08-06T06:17:56.1033999+00:00 ContainerStream: 
+2026-08-06T06:17:56.1034035+00:00 ContainerStream: Documentation : http://aka.ms/webapp-linux
+2026-08-06T06:17:56.1034064+00:00 ContainerStream: PHP quickstart: https://aka.ms/php-qs
+2026-08-06T06:17:56.1034116+00:00 ContainerStream: PHP version   : 8.2.30
+2026-08-06T06:17:56.1034143+00:00 ContainerStream: Instance Name : lw0sdlwk0000BZ
+2026-08-06T06:17:56.1034178+00:00 ContainerStream: Instance Id   : 2ddc320b3ce56068eef7d30467cf47281e2049dbabf0cdd575a97ac496677136
+2026-08-06T06:17:56.1034201+00:00 ContainerStream: 
+2026-08-06T06:17:56.1034228+00:00 ContainerStream: Note: Any data outside '/home' is not persisted
+2026-08-06T06:17:57.6340200+00:00 ContainerStream: Starting OpenBSD Secure Shell server: sshd.
+2026-08-06T06:17:57.6629170+00:00 ContainerStream: WEBSITES_INCLUDE_CLOUD_CERTS is not set to true.
+2026-08-06T06:17:57.9312322+00:00 ContainerStream: Updating certificates in /etc/ssl/certs...
+2026-08-06T06:18:27.4204821+00:00 ContainerStream: rehash: warning: skipping duplicate certificate in azl_Sectigo_Public_Server_Authentication_Root_R46.pem
+2026-08-06T06:18:27.4218314+00:00 ContainerStream: rehash: warning: skipping duplicate certificate in azl_Sectigo_Public_Server_Authentication_Root_E46.pem
+2026-08-06T06:18:27.4311595+00:00 ContainerStream: rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_RSA_Root_CA_2022.pem
+2026-08-06T06:18:27.4688329+00:00 ContainerStream: rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_ECC_Root_CA_2022.pem
+2026-08-06T06:18:27.4920735+00:00 ContainerStream: 4 added, 0 removed; done.
+2026-08-06T06:18:27.4986360+00:00 ContainerStream: Running hooks in /etc/ca-certificates/update.d...
+2026-08-06T06:18:27.5018743+00:00 ContainerStream: done.
+2026-08-06T06:18:27.5306527+00:00 ContainerStream: CA certificates copied and updated successfully.
+2026-08-06T06:18:27.5312838+00:00 ContainerStream: Running oryx create-script -appPath /home/site/wwwroot -output /opt/startup/startup.sh     -bindPort 8080 -startupCommand 'php-fpm;'
+2026-08-06T06:18:27.6555758+00:00 ContainerStream: Could not find build manifest file at '/home/site/wwwroot/oryx-manifest.toml'
+2026-08-06T06:18:27.6561212+00:00 ContainerStream: Could not find operation ID in manifest. Generating an operation id...
+2026-08-06T06:18:27.6562521+00:00 ContainerStream: Build Operation ID: 4a4b87b1-a2fc-47f0-9944-6314c3b1b96a
+2026-08-06T06:18:28.6759967+00:00 ContainerStream: Writing output script to '/opt/startup/startup.sh'
+2026-08-06T06:18:29.1740893+00:00 ContainerStream: Starting nginx: nginx.
+2026-08-06T06:18:29.6790434+00:00 ContainerStream: [06-Aug-2026 06:18:29] NOTICE: fpm is running, pid 1873
+2026-08-06T06:18:29.6958945+00:00 ContainerStream: [06-Aug-2026 06:18:29] NOTICE: ready to handle connections
+2026-08-06T06:18:29.8619183+00:00 ContainerStatus: Site startup probe succeeded after 35.0513985 seconds.
+2026-08-06T06:18:30.0657836+00:00 ContainerStatus: State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 35.0513985 seconds., DetailsLevel: INFO
+========== New Cold Start Attempt (2026-08-06T07:58:39.3887528+00:00) ==========
+2026-08-06T07:58:39.3887528+00:00 ContainerStatus: State: Stopping, Action: UnmountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:58:38, LastErrorDetails: Container exited with exit code 3 during startup after 42.7s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T07:58:40.1419994+00:00 ContainerStatus: State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:58:38, LastErrorDetails: Container exited with exit code 3 during startup after 42.7s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T07:58:40.7693092+00:00 ContainerStatus: Site: webappkrant20260805 will be blocked for 2 minutes till 08/06/2026 08:00:40
+2026-08-06T07:58:40.7701138+00:00 ContainerStatus: State: Blocked, Action: StoppingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:58:38, LastErrorDetails: Container exited with exit code 3 during startup after 42.7s. Please inspect your container logs for more details., Details: Site: webappkrant20260805 will be blocked for 2 minutes till 08/06/2026 08:00:40, DetailsLevel: WARN
+2026-08-06T07:58:40.7787807+00:00 ContainerStatus: State: Stopped, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:58:38, LastErrorDetails: Container exited with exit code 3 during startup after 42.7s. Please inspect your container logs for more details., Details: Site stopped at 08/06/2026 07:58:40 (UTC), DetailsLevel: WARN
+2026-08-06T07:58:41.5522172+00:00 ContainerStatus: State: Stopped, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:58:38, LastErrorDetails: Container exited with exit code 3 during startup after 42.7s. Please inspect your container logs for more details., Details: Site stopped at 08/06/2026 07:58:40 (UTC), DetailsLevel: WARN
+2026-08-06T07:59:02.6146811+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:58:38, LastErrorDetails: Container exited with exit code 3 during startup after 42.7s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 08/06/2026 08:00:40, DetailsLevel: WARN
+2026-08-06T07:59:02.6148515+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-08-06T08:00:40.7682026+00:00 ContainerStatus: Site: webappkrant20260805 is unblocked.
+2026-08-06T08:02:35.1742044+00:00 ContainerStatus: State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:58:38, LastErrorDetails: Container exited with exit code 3 during startup after 42.7s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 08/06/2026 08:00:40, DetailsLevel: WARN
+2026-08-06T08:02:38.2235002+00:00 ContainerStatus: State: Starting, Action: StartingMsiContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:58:38, LastErrorDetails: Container exited with exit code 3 during startup after 42.7s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 08/06/2026 08:00:40, DetailsLevel: WARN
+2026-08-06T08:02:54.3167970+00:00 ContainerStatus: State: Starting, Action: StartingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:58:38, LastErrorDetails: Container exited with exit code 3 during startup after 42.7s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 08/06/2026 08:00:40, DetailsLevel: WARN
+2026-08-06T08:02:54.3184303+00:00 ContainerStatus: Container start method called.
+2026-08-06T08:02:54.3191483+00:00 ContainerStatus: State: Starting, Action: PullingImage, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:58:38, LastErrorDetails: Container exited with exit code 3 during startup after 42.7s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.5:13209/appsvc/python:3.12_20260710.8.tuxprod for webappkrant20260805., DetailsLevel: INFO
+2026-08-06T08:02:54.3192776+00:00 ContainerStatus: Establishing network.
+2026-08-06T08:02:54.3252334+00:00 ContainerStatus: Pulling image: appsvc/python:3.12_20260710.8.tuxprod.
+2026-08-06T08:02:54.7370151+00:00 ContainerStatus: Container is starting.
+2026-08-06T08:02:54.7371656+00:00 ContainerStatus: State: Starting, Action: MountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:58:38, LastErrorDetails: Container exited with exit code 3 during startup after 42.7s. Please inspect your container logs for more details., Details: Mounting volumes for webappkrant20260805., DetailsLevel: INFO
+2026-08-06T08:02:54.7372799+00:00 ContainerStatus: Establishing user namespace if not established already.
+2026-08-06T08:02:54.7378844+00:00 ContainerStatus: Establishing network if not established already.
+2026-08-06T08:02:54.7380470+00:00 ContainerStatus: Mounting volumes.
+2026-08-06T08:02:54.7384319+00:00 ContainerStatus: Nested mountpoint 
+2026-08-06T08:02:54.7695405+00:00 ContainerStatus: Nested mountpoint volatile/logs
+2026-08-06T08:02:54.8164564+00:00 ContainerStatus: Nested mountpoint 
+2026-08-06T08:02:54.8568468+00:00 ContainerStatus: Nested mountpoint 
+2026-08-06T08:02:54.8575822+00:00 ContainerStatus: Nested mountpoint 
+2026-08-06T08:02:54.8879796+00:00 ContainerStatus: Nested mountpoint 
+2026-08-06T08:02:55.4620799+00:00 ContainerStatus: State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:58:38, LastErrorDetails: Container exited with exit code 3 during startup after 42.7s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for webappkrant20260805. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-08-06T08:02:55.4624349+00:00 ContainerStatus: Creating container.
+2026-08-06T08:02:55.4625267+00:00 ContainerStatus: Creating pipes for streaming container io.
+2026-08-06T08:02:55.4626575+00:00 ContainerStatus: Creating stdout named pipe at /podr/container/pipe/694ed79ff1df_webappkrant20260805/stdout_8918937b6fd543f79b569b585c79d5df.
+2026-08-06T08:02:55.4628773+00:00 ContainerStatus: Successfully created stdout named pipe at: /podr/container/pipe/694ed79ff1df_webappkrant20260805/stdout_8918937b6fd543f79b569b585c79d5df.
+2026-08-06T08:02:55.4629403+00:00 ContainerStatus: Opening named pipe /podr/container/pipe/694ed79ff1df_webappkrant20260805/stdout_8918937b6fd543f79b569b585c79d5df for reading in non-blocking mode.
+2026-08-06T08:02:55.4630161+00:00 ContainerStatus: Successfully opened named pipe: /podr/container/pipe/694ed79ff1df_webappkrant20260805/stdout_8918937b6fd543f79b569b585c79d5df.
+2026-08-06T08:02:55.4630668+00:00 ContainerStatus: Successfully removed non-blocking flag from /podr/container/pipe/694ed79ff1df_webappkrant20260805/stdout_8918937b6fd543f79b569b585c79d5df.
+2026-08-06T08:02:55.4631671+00:00 ContainerStatus: Creating stderr named pipe at /podr/container/pipe/694ed79ff1df_webappkrant20260805/stderr_70b58a83aa444062ab14ef68e6efee2e.
+2026-08-06T08:02:55.4632677+00:00 ContainerStatus: Successfully created stderr named pipe at: /podr/container/pipe/694ed79ff1df_webappkrant20260805/stderr_70b58a83aa444062ab14ef68e6efee2e.
+2026-08-06T08:02:55.4633260+00:00 ContainerStatus: Opening named pipe /podr/container/pipe/694ed79ff1df_webappkrant20260805/stderr_70b58a83aa444062ab14ef68e6efee2e for reading in non-blocking mode.
+2026-08-06T08:02:55.4634064+00:00 ContainerStatus: Successfully opened named pipe: /podr/container/pipe/694ed79ff1df_webappkrant20260805/stderr_70b58a83aa444062ab14ef68e6efee2e.
+2026-08-06T08:02:55.4634560+00:00 ContainerStatus: Successfully removed non-blocking flag from /podr/container/pipe/694ed79ff1df_webappkrant20260805/stderr_70b58a83aa444062ab14ef68e6efee2e.
+2026-08-06T08:02:55.4635768+00:00 ContainerStatus: Creating container with image: appsvc/python:3.12_20260710.8.tuxprod from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/appsvc/python:3.12_20260710.8.tuxprod
+2026-08-06T08:02:56.5931952+00:00 ContainerStatus: Starting container: 694ed79ff1df_webappkrant20260805.
+2026-08-06T08:02:56.6926339+00:00 ContainerStatus: Starting watchers and probes.
+2026-08-06T08:02:56.7018238+00:00 ContainerStatus: Starting metrics collection.
+2026-08-06T08:02:56.7216474+00:00 ContainerStatus: Container is running.
+2026-08-06T08:02:56.7387370+00:00 ContainerStatus: State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:58:38, LastErrorDetails: Container exited with exit code 3 during startup after 42.7s. Please inspect your container logs for more details., Details: Container webappkrant20260805 successfully created and is running., DetailsLevel: INFO
+2026-08-06T08:02:57.2452439+00:00 ContainerStatus: Container start method finished after 2926 ms.
+2026-08-06T08:02:57.2454372+00:00 ContainerStatus: State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:58:38, LastErrorDetails: Container exited with exit code 3 during startup after 42.7s. Please inspect your container logs for more details., Details: Container webappkrant20260805 successfully created and is running., DetailsLevel: INFO
+2026-08-06T08:02:57.2454661+00:00 ContainerStatus: State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:58:38, LastErrorDetails: Container exited with exit code 3 during startup after 42.7s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-08-06T08:02:57.7371547+00:00 ContainerStream:    _____                               
+2026-08-06T08:02:57.7372075+00:00 ContainerStream:   /  _  \ __________ _________   ____  
+2026-08-06T08:02:57.7372106+00:00 ContainerStream:  /  /_\  \\___   /  |  \_  __ \_/ __ \ 
+2026-08-06T08:02:57.7372129+00:00 ContainerStream: /    |    \/    /|  |  /|  | \/\  ___/ 
+2026-08-06T08:02:57.7372151+00:00 ContainerStream: \____|__  /_____ \____/ |__|    \___  >
+2026-08-06T08:02:57.7372173+00:00 ContainerStream:         \/      \/                  \/ 
+2026-08-06T08:02:57.7372194+00:00 ContainerStream: A P P   S E R V I C E   O N   L I N U X
+2026-08-06T08:02:57.7372216+00:00 ContainerStream: 
+2026-08-06T08:02:57.7372239+00:00 ContainerStream: Documentation     : https://aka.ms/webapp-linux
+2026-08-06T08:02:57.7372260+00:00 ContainerStream: Python quickstart : https://aka.ms/python-qs
+2026-08-06T08:02:57.7372281+00:00 ContainerStream: Python version    : 3.12.13
+2026-08-06T08:02:57.7372303+00:00 ContainerStream: Instance name     : lw0sdlwk0000BZ
+2026-08-06T08:02:57.7372329+00:00 ContainerStream: Instance id       : 2ddc320b3ce56068eef7d30467cf47281e2049dbabf0cdd575a97ac496677136
+2026-08-06T08:02:57.7372380+00:00 ContainerStream: 
+2026-08-06T08:02:57.7372401+00:00 ContainerStream: App port          : 8000
+2026-08-06T08:02:57.7372423+00:00 ContainerStream: Port selected by  : Default for this image
+2026-08-06T08:02:57.7372447+00:00 ContainerStream: (Learn more about the PORT appsetting https://aka.ms/webapp-python-settings)
+2026-08-06T08:02:57.7372464+00:00 ContainerStream: 
+2026-08-06T08:02:57.7372487+00:00 ContainerStream: Note: Any data outside '/home' is not persisted
+2026-08-06T08:02:57.7372506+00:00 ContainerStream: 
+2026-08-06T08:02:57.7372553+00:00 ContainerStream: ────────────────────────────────────────────────────────────────
+2026-08-06T08:02:57.7372576+00:00 ContainerStream:  Run 'apphelp' for available commands and aliases.
+2026-08-06T08:02:57.7372597+00:00 ContainerStream:  Run 'install-nettools' to install networking utilities.
+2026-08-06T08:02:57.7372632+00:00 ContainerStream: ────────────────────────────────────────────────────────────────
+2026-08-06T08:02:58.9281932+00:00 ContainerStream: Starting OpenBSD Secure Shell server: sshd.
+2026-08-06T08:02:58.9610288+00:00 ContainerStream: WEBSITES_INCLUDE_CLOUD_CERTS is not set to true.
+2026-08-06T08:02:59.0279201+00:00 ContainerStream: Updating certificates in /etc/ssl/certs...
+2026-08-06T08:03:24.6497780+00:00 ContainerStream: rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+2026-08-06T08:03:24.7798792+00:00 ContainerStream: rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_RSA_Root_CA_2022.pem
+2026-08-06T08:03:24.8373527+00:00 ContainerStream: rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_ECC_Root_CA_2022.pem
+2026-08-06T08:03:24.9191234+00:00 ContainerStream: 4 added, 0 removed; done.
+2026-08-06T08:03:24.9191623+00:00 ContainerStream: Running hooks in /etc/ca-certificates/update.d...
+2026-08-06T08:03:24.9700519+00:00 ContainerStream: done.
+2026-08-06T08:03:25.1713299+00:00 ContainerStream: CA certificates copied and updated successfully.
+2026-08-06T08:03:25.5241893+00:00 ContainerStream: Site's appCommandLine: gunicorn --bind=0.0.0.0 app:app
+2026-08-06T08:03:26.5118331+00:00 ContainerStream: Starting periodic command scheduler: cron.
+2026-08-06T08:03:26.5140067+00:00 ContainerStream: Launching oryx with: create-script -appPath /home/site/wwwroot -output /opt/startup/startup.sh -virtualEnvName antenv -defaultApp /opt/defaultsite -userStartupCommand 'gunicorn --bind=0.0.0.0 app:app'
+2026-08-06T08:03:26.8942904+00:00 ContainerStream: Could not find build manifest file at '/home/site/wwwroot/oryx-manifest.toml'
+2026-08-06T08:03:26.8954822+00:00 ContainerStream: Could not find operation ID in manifest. Generating an operation id...
+2026-08-06T08:03:26.9026830+00:00 ContainerStream: Build Operation ID: f2757190-42f5-4927-9c45-1de32fc70e5e
+2026-08-06T08:03:27.8769736+00:00 ContainerStream: Oryx Version: 0.2.20260710.1, Commit: 079b5b6294eb97d462d8f96bfa3243e9b85251da, ReleaseTagName: 20260710.1
+2026-08-06T08:03:28.0251107+00:00 ContainerStream: Writing output script to '/opt/startup/startup.sh'
+2026-08-06T08:03:28.2478098+00:00 ContainerStream: WARNING: Could not find virtual environment directory /home/site/wwwroot/antenv.
+2026-08-06T08:03:28.2484407+00:00 ContainerStream: WARNING: Could not find package directory /home/site/wwwroot/__oryx_packages__.
+2026-08-06T08:03:30.2047451+00:00 ContainerStream: [2026-08-06 08:03:30 +0000] [1871] [INFO] Starting gunicorn 24.1.1
+2026-08-06T08:03:30.2047769+00:00 ContainerStream: [2026-08-06 08:03:30 +0000] [1871] [INFO] Listening at: http://0.0.0.0:8000 (1871)
+2026-08-06T08:03:30.2047799+00:00 ContainerStream: [2026-08-06 08:03:30 +0000] [1871] [INFO] Using worker: sync
+2026-08-06T08:03:30.2526151+00:00 ContainerStream: [2026-08-06 08:03:30 +0000] [1873] [INFO] Booting worker with pid: 1873
+2026-08-06T08:03:32.0051893+00:00 ContainerStatus: Site startup probe succeeded after 34.7203711 seconds.
+2026-08-06T08:03:32.3833791+00:00 ContainerStatus: State: Starting, Action: WarmUpProbeSucceeded, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:58:38, LastErrorDetails: Container exited with exit code 3 during startup after 42.7s. Please inspect your container logs for more details., Details: Site startup probe succeeded after 34.7203711 seconds., DetailsLevel: INFO

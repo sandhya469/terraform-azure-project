@@ -1,0 +1,3 @@
+2026-08-05T05:52:40.6701975Z Site started.
+2026-08-05T05:52:40.6880379Z State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 08/05/2026 05:52:40 (UTC), DetailsLevel: INFO
+2026-08-05T05:52:41.1843176Z Site is running with patch version PHP-8.2.30

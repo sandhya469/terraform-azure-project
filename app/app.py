@@ -6,19 +6,20 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
+    try:
+        credential = DefaultAzureCredential()
 
-    credential = DefaultAzureCredential()
+        client = SecretClient(
+            vault_url="https://kvkrant20260805.vault.azure.net/",
+            credential=credential
+        )
 
-    vault_url = "https://kvkrant20260805.vault.azure.net/"
+        secret = client.get_secret("sqlconnection")
 
-    client = SecretClient(
-        vault_url=vault_url,
-        credential=credential
-    )
+        return secret.value
 
-    secret = client.get_secret("sqlconnection")
-
-    return secret.value
+    except Exception as e:
+        return str(e)
 
 if __name__ == "__main__":
     app.run()

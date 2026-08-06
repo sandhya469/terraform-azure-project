@@ -1,0 +1,878 @@
+2026-08-06T05:01:07.6201525Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-08-06T05:01:11.3457898Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-08-06T05:01:11.3464844Z Container start method called.
+2026-08-06T05:01:11.3478837Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.4:13209/appsvc/php:8.2-fpm_20260428.5.tuxprod for webappkrant20260805., DetailsLevel: INFO
+2026-08-06T05:01:11.3483392Z Establishing network.
+2026-08-06T05:01:11.3485021Z Pulling image: appsvc/php:8.2-fpm_20260428.5.tuxprod.
+2026-08-06T05:01:13.2410246Z Image appsvc/php:8.2-fpm_20260428.5.tuxprod is pulled from registry 10.1.0.4:13209
+2026-08-06T05:01:13.2415235Z Container is starting.
+2026-08-06T05:01:13.2419057Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for webappkrant20260805., DetailsLevel: INFO
+2026-08-06T05:01:13.2420461Z Establishing user namespace if not established already.
+2026-08-06T05:01:13.2423707Z Establishing network if not established already.
+2026-08-06T05:01:13.2430016Z Mounting volumes.
+2026-08-06T05:01:13.2433852Z Nested mountpoint 
+2026-08-06T05:01:13.3014894Z Nested mountpoint volatile/logs
+2026-08-06T05:01:13.3611150Z Nested mountpoint 
+2026-08-06T05:01:13.3714129Z Nested mountpoint 
+2026-08-06T05:01:13.7138454Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for webappkrant20260805. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-08-06T05:01:13.7142299Z Creating container.
+2026-08-06T05:01:13.7143153Z Creating pipes for streaming container io.
+2026-08-06T05:01:13.7143812Z Creating stdout named pipe at /podr/container/pipe/b36cbd7907e5_webappkrant20260805/stdout_9419f99413854b3bb8a0c37969cfe87a.
+2026-08-06T05:01:13.7331876Z Successfully created stdout named pipe at: /podr/container/pipe/b36cbd7907e5_webappkrant20260805/stdout_9419f99413854b3bb8a0c37969cfe87a.
+2026-08-06T05:01:13.7332682Z Opening named pipe /podr/container/pipe/b36cbd7907e5_webappkrant20260805/stdout_9419f99413854b3bb8a0c37969cfe87a for reading in non-blocking mode.
+2026-08-06T05:01:13.7333494Z Successfully opened named pipe: /podr/container/pipe/b36cbd7907e5_webappkrant20260805/stdout_9419f99413854b3bb8a0c37969cfe87a.
+2026-08-06T05:01:13.7334150Z Successfully removed non-blocking flag from /podr/container/pipe/b36cbd7907e5_webappkrant20260805/stdout_9419f99413854b3bb8a0c37969cfe87a.
+2026-08-06T05:01:13.7357494Z Creating stderr named pipe at /podr/container/pipe/b36cbd7907e5_webappkrant20260805/stderr_0aee389cecd24621a202f8fed3fb9c61.
+2026-08-06T05:01:13.7360949Z Successfully created stderr named pipe at: /podr/container/pipe/b36cbd7907e5_webappkrant20260805/stderr_0aee389cecd24621a202f8fed3fb9c61.
+2026-08-06T05:01:13.7364733Z Opening named pipe /podr/container/pipe/b36cbd7907e5_webappkrant20260805/stderr_0aee389cecd24621a202f8fed3fb9c61 for reading in non-blocking mode.
+2026-08-06T05:01:13.7369176Z Successfully opened named pipe: /podr/container/pipe/b36cbd7907e5_webappkrant20260805/stderr_0aee389cecd24621a202f8fed3fb9c61.
+2026-08-06T05:01:13.7630526Z Successfully removed non-blocking flag from /podr/container/pipe/b36cbd7907e5_webappkrant20260805/stderr_0aee389cecd24621a202f8fed3fb9c61.
+2026-08-06T05:01:13.7636299Z Creating container with image: appsvc/php:8.2-fpm_20260428.5.tuxprod from registry: 10.1.0.4:13209 and fully qualified image name: 10.1.0.4:13209/appsvc/php:8.2-fpm_20260428.5.tuxprod
+2026-08-06T05:01:15.4043952Z Starting container: b36cbd7907e5_webappkrant20260805.
+2026-08-06T05:01:15.4792731Z Starting watchers and probes.
+2026-08-06T05:01:15.4872410Z Starting metrics collection.
+2026-08-06T05:01:15.4879024Z Container is running.
+2026-08-06T05:01:15.4886161Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container webappkrant20260805 successfully created and is running., DetailsLevel: INFO
+2026-08-06T05:01:15.6925816Z Container start method finished after 4318 ms.
+2026-08-06T05:01:15.6940450Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container webappkrant20260805 successfully created and is running., DetailsLevel: INFO
+2026-08-06T05:01:15.6940780Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-08-06T05:01:49.9574572Z Site startup probe succeeded after 34.1213457 seconds.
+2026-08-06T05:01:50.2896897Z State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 34.1213457 seconds., DetailsLevel: INFO
+2026-08-06T05:01:50.8263098Z Site is running with deployment version: c90845ba-f4e6-4dec-ac8b-5d4a54660963
+2026-08-06T05:01:50.8320504Z Site started.
+2026-08-06T05:01:50.8339231Z State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 08/06/2026 05:01:50 (UTC), DetailsLevel: INFO
+2026-08-06T05:01:50.8425197Z Site is running with patch version PHP-8.2.30
+2026-08-06T05:02:11.2502735Z State: Stopping, Action: StoppingSite, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 08/05/2026 05:52:40 (UTC), DetailsLevel: INFO
+2026-08-06T05:02:11.3822992Z State: Stopping, Action: StoppingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 08/05/2026 05:52:40 (UTC), DetailsLevel: INFO
+2026-08-06T05:02:11.4395238Z Container is terminating. Grace period: 5 seconds.
+2026-08-06T05:02:11.5626597Z Stop and delete container. Retry count = 0
+2026-08-06T05:02:11.5641913Z Stopping container: d3e37cba0a3b_webappkrant20260805.
+2026-08-06T05:02:17.3260018Z Deleting container: d3e37cba0a3b_webappkrant20260805. Retry count = 0
+2026-08-06T05:02:18.3752002Z Container spec TerminationMessagePolicy  path 
+2026-08-06T05:02:18.4718701Z Container is terminated. Total time elapsed: 7029 ms.
+2026-08-06T05:02:18.6174253Z Site: webappkrant20260805 stopped.
+2026-08-06T06:17:29.2517840Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-08-06T06:17:33.0970362Z State: Starting, Action: StartingMsiContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-08-06T06:17:52.5386967Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-08-06T06:17:52.5392201Z Container start method called.
+2026-08-06T06:17:52.5401584Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.5:13209/appsvc/php:8.2-fpm_20260428.5.tuxprod for webappkrant20260805., DetailsLevel: INFO
+2026-08-06T06:17:52.5406485Z Establishing network.
+2026-08-06T06:17:52.5409653Z Pulling image: appsvc/php:8.2-fpm_20260428.5.tuxprod.
+2026-08-06T06:17:52.8020433Z Container is starting.
+2026-08-06T06:17:52.8102781Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for webappkrant20260805., DetailsLevel: INFO
+2026-08-06T06:17:52.8104787Z Establishing user namespace if not established already.
+2026-08-06T06:17:52.8110655Z Establishing network if not established already.
+2026-08-06T06:17:52.8112013Z Mounting volumes.
+2026-08-06T06:17:52.8113896Z Nested mountpoint 
+2026-08-06T06:17:52.8420403Z Nested mountpoint volatile/logs
+2026-08-06T06:17:52.9093403Z Nested mountpoint 
+2026-08-06T06:17:52.9100258Z Nested mountpoint 
+2026-08-06T06:17:53.1557467Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for webappkrant20260805. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-08-06T06:17:53.1571847Z Creating container.
+2026-08-06T06:17:53.1576585Z Creating pipes for streaming container io.
+2026-08-06T06:17:53.1590542Z Creating stdout named pipe at /podr/container/pipe/17c0fb48da29_webappkrant20260805/stdout_b9cadac426574d85bf203a337f402819.
+2026-08-06T06:17:53.1789244Z Successfully created stdout named pipe at: /podr/container/pipe/17c0fb48da29_webappkrant20260805/stdout_b9cadac426574d85bf203a337f402819.
+2026-08-06T06:17:53.2083501Z Opening named pipe /podr/container/pipe/17c0fb48da29_webappkrant20260805/stdout_b9cadac426574d85bf203a337f402819 for reading in non-blocking mode.
+2026-08-06T06:17:53.2087114Z Successfully opened named pipe: /podr/container/pipe/17c0fb48da29_webappkrant20260805/stdout_b9cadac426574d85bf203a337f402819.
+2026-08-06T06:17:53.2253262Z Successfully removed non-blocking flag from /podr/container/pipe/17c0fb48da29_webappkrant20260805/stdout_b9cadac426574d85bf203a337f402819.
+2026-08-06T06:17:53.2285386Z Creating stderr named pipe at /podr/container/pipe/17c0fb48da29_webappkrant20260805/stderr_f24d62ea813749afb4367fbd0dbe411a.
+2026-08-06T06:17:53.2459077Z Successfully created stderr named pipe at: /podr/container/pipe/17c0fb48da29_webappkrant20260805/stderr_f24d62ea813749afb4367fbd0dbe411a.
+2026-08-06T06:17:53.2466510Z Opening named pipe /podr/container/pipe/17c0fb48da29_webappkrant20260805/stderr_f24d62ea813749afb4367fbd0dbe411a for reading in non-blocking mode.
+2026-08-06T06:17:53.2471885Z Successfully opened named pipe: /podr/container/pipe/17c0fb48da29_webappkrant20260805/stderr_f24d62ea813749afb4367fbd0dbe411a.
+2026-08-06T06:17:53.2477526Z Successfully removed non-blocking flag from /podr/container/pipe/17c0fb48da29_webappkrant20260805/stderr_f24d62ea813749afb4367fbd0dbe411a.
+2026-08-06T06:17:53.2573297Z Creating container with image: appsvc/php:8.2-fpm_20260428.5.tuxprod from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/appsvc/php:8.2-fpm_20260428.5.tuxprod
+2026-08-06T06:17:54.2223721Z Starting container: 17c0fb48da29_webappkrant20260805.
+2026-08-06T06:17:54.4170113Z Starting watchers and probes.
+2026-08-06T06:17:54.4174466Z Starting metrics collection.
+2026-08-06T06:17:54.4351708Z Container is running.
+2026-08-06T06:17:54.4353956Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container webappkrant20260805 successfully created and is running., DetailsLevel: INFO
+2026-08-06T06:17:54.6852646Z Container start method finished after 2145 ms.
+2026-08-06T06:17:54.7133221Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container webappkrant20260805 successfully created and is running., DetailsLevel: INFO
+2026-08-06T06:17:54.7133845Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-08-06T06:18:29.8619183Z Site startup probe succeeded after 35.0513985 seconds.
+2026-08-06T06:18:30.0657836Z State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 35.0513985 seconds., DetailsLevel: INFO
+2026-08-06T06:18:30.4566617Z Site is running with deployment version: c90845ba-f4e6-4dec-ac8b-5d4a54660963
+2026-08-06T06:18:30.4583410Z Site started.
+2026-08-06T06:18:30.4619255Z State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 08/06/2026 06:18:30 (UTC), DetailsLevel: INFO
+2026-08-06T06:18:30.4709820Z Site is running with patch version PHP-8.2.30
+2026-08-06T06:18:50.6052563Z State: Stopping, Action: StoppingSite, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 08/06/2026 05:01:50 (UTC), DetailsLevel: INFO
+2026-08-06T06:18:50.6113422Z State: Stopping, Action: StoppingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 08/06/2026 05:01:50 (UTC), DetailsLevel: INFO
+2026-08-06T06:18:50.6126454Z Container is terminating. Grace period: 5 seconds.
+2026-08-06T06:18:50.6598036Z Stop and delete container. Retry count = 0
+2026-08-06T06:18:50.6620160Z Stopping container: b36cbd7907e5_webappkrant20260805.
+2026-08-06T06:18:56.2529283Z Deleting container: b36cbd7907e5_webappkrant20260805. Retry count = 0
+2026-08-06T06:18:56.5759269Z Container spec TerminationMessagePolicy  path 
+2026-08-06T06:18:56.5777120Z Container is terminated. Total time elapsed: 5962 ms.
+2026-08-06T06:18:56.5878767Z Site: webappkrant20260805 stopped.
+2026-08-06T07:35:23.7672294Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-08-06T07:35:29.5898772Z State: Starting, Action: StartingMsiContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-08-06T07:35:58.4225863Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-08-06T07:35:58.4236807Z Container start method called.
+2026-08-06T07:35:58.4304672Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.4:13209/appsvc/python:3.12_20260710.8.tuxprod for webappkrant20260805., DetailsLevel: INFO
+2026-08-06T07:35:58.4306003Z Establishing network.
+2026-08-06T07:35:58.4306930Z Pulling image: appsvc/python:3.12_20260710.8.tuxprod.
+2026-08-06T07:37:37.7467449Z Container pull image interrupted. Revert by terminate.
+2026-08-06T07:37:37.7475464Z Container is terminating. Grace period: 5 seconds.
+2026-08-06T07:37:37.7551879Z Container spec TerminationMessagePolicy  path 
+2026-08-06T07:37:37.7664650Z Container is terminated. Total time elapsed: 18 ms.
+2026-08-06T07:37:37.7759289Z Site container: webappkrant20260805 terminated during site startup.
+2026-08-06T07:37:37.8052971Z State: Stopping, Action: CancellingStartup, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T07:37:37.8947241Z State: Stopping, Action: CancellingStartup, LastError: SiteStartupCancelled, LastErrorTimestamp: 08/06/2026 07:37:37, LastErrorDetails: Site stopped manually or container terminated, Details: Site stopped manually or container terminated, DetailsLevel: WARN
+2026-08-06T07:37:38.3993464Z State: Stopping, Action: StoppingSite, LastError: SiteStartupCancelled, LastErrorTimestamp: 08/06/2026 07:37:37, LastErrorDetails: Site stopped manually or container terminated, Details: Site stopped manually or container terminated, DetailsLevel: WARN
+2026-08-06T07:37:38.4362943Z State: Stopping, Action: StoppingSiteContainers, LastError: SiteStartupCancelled, LastErrorTimestamp: 08/06/2026 07:37:37, LastErrorDetails: Site stopped manually or container terminated, Details: Site stopped manually or container terminated, DetailsLevel: WARN
+2026-08-06T07:37:41.0426468Z Site container: webappkrant20260805_managedIdentity terminated during site startup.
+2026-08-06T07:37:41.1578537Z State: Stopping, Action: StoppingSiteContainers, LastError: SiteStartupCancelled, LastErrorTimestamp: 08/06/2026 07:37:37, LastErrorDetails: Site stopped manually or container terminated, Details: Site stopped manually or container terminated, DetailsLevel: WARN
+2026-08-06T07:37:41.1752429Z Site: webappkrant20260805 stopped.
+2026-08-06T07:37:49.8802780Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-08-06T07:37:59.0407427Z State: Starting, Action: StartingMsiContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-08-06T07:38:27.6905905Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-08-06T07:38:27.6916844Z Container start method called.
+2026-08-06T07:38:27.6918064Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.5:13209/appsvc/python:3.12_20260710.8.tuxprod for webappkrant20260805., DetailsLevel: INFO
+2026-08-06T07:38:27.6919948Z Establishing network.
+2026-08-06T07:38:27.6921486Z Pulling image: appsvc/python:3.12_20260710.8.tuxprod.
+2026-08-06T07:40:01.1694625Z Image appsvc/python:3.12_20260710.8.tuxprod is pulled from registry 10.1.0.5:13209
+2026-08-06T07:40:01.1721598Z Container is starting.
+2026-08-06T07:40:01.2160720Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for webappkrant20260805., DetailsLevel: INFO
+2026-08-06T07:40:01.2173715Z Establishing user namespace if not established already.
+2026-08-06T07:40:01.2178092Z Establishing network if not established already.
+2026-08-06T07:40:01.2196858Z Mounting volumes.
+2026-08-06T07:40:01.2472141Z Nested mountpoint 
+2026-08-06T07:40:01.2760821Z Nested mountpoint volatile/logs
+2026-08-06T07:40:01.5091902Z Nested mountpoint 
+2026-08-06T07:40:01.8642690Z Nested mountpoint 
+2026-08-06T07:40:01.9026953Z Nested mountpoint 
+2026-08-06T07:40:02.1178088Z Nested mountpoint 
+2026-08-06T07:40:02.9754705Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for webappkrant20260805. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-08-06T07:40:03.0039688Z Creating container.
+2026-08-06T07:40:03.0043113Z Creating pipes for streaming container io.
+2026-08-06T07:40:03.0043815Z Creating stdout named pipe at /podr/container/pipe/63ee8bb996e2_webappkrant20260805/stdout_e74f03cd838e48058e2b7bebfe3a6b6b.
+2026-08-06T07:40:03.0456576Z Successfully created stdout named pipe at: /podr/container/pipe/63ee8bb996e2_webappkrant20260805/stdout_e74f03cd838e48058e2b7bebfe3a6b6b.
+2026-08-06T07:40:03.0457487Z Opening named pipe /podr/container/pipe/63ee8bb996e2_webappkrant20260805/stdout_e74f03cd838e48058e2b7bebfe3a6b6b for reading in non-blocking mode.
+2026-08-06T07:40:03.0458333Z Successfully opened named pipe: /podr/container/pipe/63ee8bb996e2_webappkrant20260805/stdout_e74f03cd838e48058e2b7bebfe3a6b6b.
+2026-08-06T07:40:03.0459791Z Successfully removed non-blocking flag from /podr/container/pipe/63ee8bb996e2_webappkrant20260805/stdout_e74f03cd838e48058e2b7bebfe3a6b6b.
+2026-08-06T07:40:03.0560313Z Creating stderr named pipe at /podr/container/pipe/63ee8bb996e2_webappkrant20260805/stderr_f9b1abe7c0b946a59d0c8ec252c993c3.
+2026-08-06T07:40:03.2369370Z Successfully created stderr named pipe at: /podr/container/pipe/63ee8bb996e2_webappkrant20260805/stderr_f9b1abe7c0b946a59d0c8ec252c993c3.
+2026-08-06T07:40:03.2371513Z Opening named pipe /podr/container/pipe/63ee8bb996e2_webappkrant20260805/stderr_f9b1abe7c0b946a59d0c8ec252c993c3 for reading in non-blocking mode.
+2026-08-06T07:40:03.2372952Z Successfully opened named pipe: /podr/container/pipe/63ee8bb996e2_webappkrant20260805/stderr_f9b1abe7c0b946a59d0c8ec252c993c3.
+2026-08-06T07:40:03.2373593Z Successfully removed non-blocking flag from /podr/container/pipe/63ee8bb996e2_webappkrant20260805/stderr_f9b1abe7c0b946a59d0c8ec252c993c3.
+2026-08-06T07:40:03.2375902Z Creating container with image: appsvc/python:3.12_20260710.8.tuxprod from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/appsvc/python:3.12_20260710.8.tuxprod
+2026-08-06T07:40:06.7502976Z Starting container: 63ee8bb996e2_webappkrant20260805.
+2026-08-06T07:40:06.9183309Z Starting watchers and probes.
+2026-08-06T07:40:06.9296108Z Starting metrics collection.
+2026-08-06T07:40:06.9299106Z Container is running.
+2026-08-06T07:40:06.9568797Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container webappkrant20260805 successfully created and is running., DetailsLevel: INFO
+2026-08-06T07:40:07.4029984Z Container start method finished after 99711 ms.
+2026-08-06T07:40:07.4038611Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container webappkrant20260805 successfully created and is running., DetailsLevel: INFO
+2026-08-06T07:40:07.4109519Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-08-06T07:40:50.7447135Z Container has finished running with exit code: 3.
+2026-08-06T07:40:50.7530240Z Container is terminating. Grace period: 5 seconds.
+2026-08-06T07:40:50.7543844Z Stop and delete container. Retry count = 0
+2026-08-06T07:40:50.7544543Z Stopping container: 63ee8bb996e2_webappkrant20260805.
+2026-08-06T07:40:50.9020838Z Deleting container: 63ee8bb996e2_webappkrant20260805. Retry count = 0
+2026-08-06T07:40:51.4770848Z Container spec TerminationMessagePolicy  path 
+2026-08-06T07:40:51.4841139Z Container is terminated. Total time elapsed: 730 ms.
+2026-08-06T07:40:51.4842743Z Site container: webappkrant20260805 terminated during site startup.
+2026-08-06T07:40:51.4850855Z State: Stopping, Action: CancellingStartup, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T07:40:51.5313831Z Site startup probe failed after 43.9345299 seconds.
+2026-08-06T07:40:51.9656842Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:40:51, LastErrorDetails: Container exited with exit code 3 during startup after 44.6s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T07:40:51.9761846Z Failed to start site. Revert by stopping site.
+2026-08-06T07:40:51.9837394Z State: Stopping, Action: StoppingSite, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:40:51, LastErrorDetails: Container exited with exit code 3 during startup after 44.6s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T07:40:51.9851192Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:40:51, LastErrorDetails: Container exited with exit code 3 during startup after 44.6s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T07:40:52.5875037Z Site container: webappkrant20260805_managedIdentity terminated during site startup.
+2026-08-06T07:40:52.5876341Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:40:51, LastErrorDetails: Container exited with exit code 3 during startup after 44.6s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T07:40:52.5877441Z Site: webappkrant20260805 stopped.
+2026-08-06T07:41:15.6610301Z State: Stopping, Action: StoppingSite, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 08/06/2026 06:18:30 (UTC), DetailsLevel: INFO
+2026-08-06T07:41:15.6673622Z State: Stopping, Action: StoppingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 08/06/2026 06:18:30 (UTC), DetailsLevel: INFO
+2026-08-06T07:41:15.6689722Z Container is terminating. Grace period: 5 seconds.
+2026-08-06T07:41:15.8058957Z Stop and delete container. Retry count = 0
+2026-08-06T07:41:15.8091748Z Stopping container: 17c0fb48da29_webappkrant20260805.
+2026-08-06T07:41:21.1804800Z Deleting container: 17c0fb48da29_webappkrant20260805. Retry count = 0
+2026-08-06T07:41:22.5805857Z Container spec TerminationMessagePolicy  path 
+2026-08-06T07:41:22.5807223Z Container is terminated. Total time elapsed: 6911 ms.
+2026-08-06T07:41:24.9333207Z Site: webappkrant20260805 stopped.
+2026-08-06T07:40:52.6280462Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:40:51, LastErrorDetails: Container exited with exit code 3 during startup after 44.6s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T07:40:53.4912974Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:40:51, LastErrorDetails: Container exited with exit code 3 during startup after 44.6s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T07:40:54.6644394Z State: Stopped, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:40:51, LastErrorDetails: Container exited with exit code 3 during startup after 44.6s. Please inspect your container logs for more details., Details: Site stopped at 08/06/2026 07:40:54 (UTC), DetailsLevel: ERR
+2026-08-06T07:40:55.4831334Z State: Stopped, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:40:51, LastErrorDetails: Container exited with exit code 3 during startup after 44.6s. Please inspect your container logs for more details., Details: Site stopped at 08/06/2026 07:40:54 (UTC), DetailsLevel: ERR
+2026-08-06T07:42:33.6681048Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:40:51, LastErrorDetails: Container exited with exit code 3 during startup after 44.6s. Please inspect your container logs for more details., Details: Site stopped at 08/06/2026 07:40:54 (UTC), DetailsLevel: ERR
+2026-08-06T07:42:36.9820421Z State: Starting, Action: StartingMsiContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:40:51, LastErrorDetails: Container exited with exit code 3 during startup after 44.6s. Please inspect your container logs for more details., Details: Site stopped at 08/06/2026 07:40:54 (UTC), DetailsLevel: ERR
+2026-08-06T07:42:55.7948720Z State: Starting, Action: StartingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:40:51, LastErrorDetails: Container exited with exit code 3 during startup after 44.6s. Please inspect your container logs for more details., Details: Site stopped at 08/06/2026 07:40:54 (UTC), DetailsLevel: ERR
+2026-08-06T07:42:55.7951870Z Container start method called.
+2026-08-06T07:42:55.7953122Z State: Starting, Action: PullingImage, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:40:51, LastErrorDetails: Container exited with exit code 3 during startup after 44.6s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.5:13209/appsvc/python:3.12_20260710.8.tuxprod for webappkrant20260805., DetailsLevel: INFO
+2026-08-06T07:42:55.7954254Z Establishing network.
+2026-08-06T07:42:55.7957648Z Pulling image: appsvc/python:3.12_20260710.8.tuxprod.
+2026-08-06T07:42:56.0829925Z Container is starting.
+2026-08-06T07:42:56.0830835Z State: Starting, Action: MountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:40:51, LastErrorDetails: Container exited with exit code 3 during startup after 44.6s. Please inspect your container logs for more details., Details: Mounting volumes for webappkrant20260805., DetailsLevel: INFO
+2026-08-06T07:42:56.0831473Z Establishing user namespace if not established already.
+2026-08-06T07:42:56.0832051Z Establishing network if not established already.
+2026-08-06T07:42:56.0832768Z Mounting volumes.
+2026-08-06T07:42:56.0833735Z Nested mountpoint 
+2026-08-06T07:42:56.1215671Z Nested mountpoint volatile/logs
+2026-08-06T07:42:56.2267561Z Nested mountpoint 
+2026-08-06T07:42:56.2273726Z Nested mountpoint 
+2026-08-06T07:42:56.3451844Z Nested mountpoint 
+2026-08-06T07:42:56.3635792Z Nested mountpoint 
+2026-08-06T07:42:56.7913087Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:40:51, LastErrorDetails: Container exited with exit code 3 during startup after 44.6s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for webappkrant20260805. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-08-06T07:42:56.8273317Z Creating container.
+2026-08-06T07:42:56.8280242Z Creating pipes for streaming container io.
+2026-08-06T07:42:56.8496441Z Creating stdout named pipe at /podr/container/pipe/13fde793dee5_webappkrant20260805/stdout_302e130908e5459aa17903f1b7a0bbf4.
+2026-08-06T07:42:56.8670739Z Successfully created stdout named pipe at: /podr/container/pipe/13fde793dee5_webappkrant20260805/stdout_302e130908e5459aa17903f1b7a0bbf4.
+2026-08-06T07:42:56.8672052Z Opening named pipe /podr/container/pipe/13fde793dee5_webappkrant20260805/stdout_302e130908e5459aa17903f1b7a0bbf4 for reading in non-blocking mode.
+2026-08-06T07:42:56.8673075Z Successfully opened named pipe: /podr/container/pipe/13fde793dee5_webappkrant20260805/stdout_302e130908e5459aa17903f1b7a0bbf4.
+2026-08-06T07:42:56.8674086Z Successfully removed non-blocking flag from /podr/container/pipe/13fde793dee5_webappkrant20260805/stdout_302e130908e5459aa17903f1b7a0bbf4.
+2026-08-06T07:42:56.8675179Z Creating stderr named pipe at /podr/container/pipe/13fde793dee5_webappkrant20260805/stderr_63b42b14e5c6459cbbaea56dcef9291c.
+2026-08-06T07:42:56.8676389Z Successfully created stderr named pipe at: /podr/container/pipe/13fde793dee5_webappkrant20260805/stderr_63b42b14e5c6459cbbaea56dcef9291c.
+2026-08-06T07:42:56.8677000Z Opening named pipe /podr/container/pipe/13fde793dee5_webappkrant20260805/stderr_63b42b14e5c6459cbbaea56dcef9291c for reading in non-blocking mode.
+2026-08-06T07:42:56.8677713Z Successfully opened named pipe: /podr/container/pipe/13fde793dee5_webappkrant20260805/stderr_63b42b14e5c6459cbbaea56dcef9291c.
+2026-08-06T07:42:56.8678264Z Successfully removed non-blocking flag from /podr/container/pipe/13fde793dee5_webappkrant20260805/stderr_63b42b14e5c6459cbbaea56dcef9291c.
+2026-08-06T07:42:56.8679216Z Creating container with image: appsvc/python:3.12_20260710.8.tuxprod from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/appsvc/python:3.12_20260710.8.tuxprod
+2026-08-06T07:42:57.8489052Z Starting container: 13fde793dee5_webappkrant20260805.
+2026-08-06T07:42:57.9540853Z Starting watchers and probes.
+2026-08-06T07:42:57.9630299Z Starting metrics collection.
+2026-08-06T07:42:57.9632433Z Container is running.
+2026-08-06T07:42:57.9633834Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:40:51, LastErrorDetails: Container exited with exit code 3 during startup after 44.6s. Please inspect your container logs for more details., Details: Container webappkrant20260805 successfully created and is running., DetailsLevel: INFO
+2026-08-06T07:42:58.2200610Z Container start method finished after 2424 ms.
+2026-08-06T07:42:58.2652459Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:40:51, LastErrorDetails: Container exited with exit code 3 during startup after 44.6s. Please inspect your container logs for more details., Details: Container webappkrant20260805 successfully created and is running., DetailsLevel: INFO
+2026-08-06T07:42:58.2656639Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:40:51, LastErrorDetails: Container exited with exit code 3 during startup after 44.6s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-08-06T07:43:35.3825939Z Container has finished running with exit code: 3.
+2026-08-06T07:43:35.4099544Z Container is terminating. Grace period: 5 seconds.
+2026-08-06T07:43:35.4116337Z Stop and delete container. Retry count = 0
+2026-08-06T07:43:35.4117178Z Stopping container: 13fde793dee5_webappkrant20260805.
+2026-08-06T07:43:35.5874279Z Deleting container: 13fde793dee5_webappkrant20260805. Retry count = 0
+2026-08-06T07:43:35.9666461Z Container spec TerminationMessagePolicy  path 
+2026-08-06T07:43:35.9675802Z Container is terminated. Total time elapsed: 556 ms.
+2026-08-06T07:43:35.9684556Z Site container: webappkrant20260805 terminated during site startup.
+2026-08-06T07:43:35.9997751Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:40:51, LastErrorDetails: Container exited with exit code 3 during startup after 44.6s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T07:43:36.0089393Z Site startup probe failed after 37.7034896 seconds.
+2026-08-06T07:43:36.3036950Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:43:36, LastErrorDetails: Container exited with exit code 3 during startup after 38.0s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T07:43:36.3331044Z Failed to start site. Revert by stopping site.
+2026-08-06T07:43:36.3399600Z State: Stopping, Action: StoppingSite, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:43:36, LastErrorDetails: Container exited with exit code 3 during startup after 38.0s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T07:43:36.3417982Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:43:36, LastErrorDetails: Container exited with exit code 3 during startup after 38.0s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T07:43:36.7724919Z Site container: webappkrant20260805_managedIdentity terminated during site startup.
+2026-08-06T07:43:36.7737120Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:43:36, LastErrorDetails: Container exited with exit code 3 during startup after 38.0s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T07:43:36.7815016Z Site: webappkrant20260805 stopped.
+2026-08-06T07:43:36.7890830Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:43:36, LastErrorDetails: Container exited with exit code 3 during startup after 38.0s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T07:43:37.5273101Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:43:36, LastErrorDetails: Container exited with exit code 3 during startup after 38.0s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T07:43:37.9350497Z Site: webappkrant20260805 will be blocked for 1 minutes till 08/06/2026 07:44:37
+2026-08-06T07:43:37.9416096Z State: Blocked, Action: StoppingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:43:36, LastErrorDetails: Container exited with exit code 3 during startup after 38.0s. Please inspect your container logs for more details., Details: Site: webappkrant20260805 will be blocked for 1 minutes till 08/06/2026 07:44:37, DetailsLevel: WARN
+2026-08-06T07:43:38.0618049Z State: Stopped, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:43:36, LastErrorDetails: Container exited with exit code 3 during startup after 38.0s. Please inspect your container logs for more details., Details: Site stopped at 08/06/2026 07:43:38 (UTC), DetailsLevel: WARN
+2026-08-06T07:43:38.8796766Z State: Stopped, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:43:36, LastErrorDetails: Container exited with exit code 3 during startup after 38.0s. Please inspect your container logs for more details., Details: Site stopped at 08/06/2026 07:43:38 (UTC), DetailsLevel: WARN
+2026-08-06T07:44:37.9400127Z Site: webappkrant20260805 is unblocked.
+2026-08-06T07:46:39.7655469Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:43:36, LastErrorDetails: Container exited with exit code 3 during startup after 38.0s. Please inspect your container logs for more details., Details: Site stopped at 08/06/2026 07:43:38 (UTC), DetailsLevel: WARN
+2026-08-06T07:46:42.9518763Z State: Starting, Action: StartingMsiContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:43:36, LastErrorDetails: Container exited with exit code 3 during startup after 38.0s. Please inspect your container logs for more details., Details: Site stopped at 08/06/2026 07:43:38 (UTC), DetailsLevel: WARN
+2026-08-06T07:47:00.0893332Z State: Starting, Action: StartingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:43:36, LastErrorDetails: Container exited with exit code 3 during startup after 38.0s. Please inspect your container logs for more details., Details: Site stopped at 08/06/2026 07:43:38 (UTC), DetailsLevel: WARN
+2026-08-06T07:47:00.0894258Z Container start method called.
+2026-08-06T07:47:00.0894752Z State: Starting, Action: PullingImage, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:43:36, LastErrorDetails: Container exited with exit code 3 during startup after 38.0s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.5:13209/appsvc/python:3.12_20260710.8.tuxprod for webappkrant20260805., DetailsLevel: INFO
+2026-08-06T07:47:00.0895415Z Establishing network.
+2026-08-06T07:47:00.0896255Z Pulling image: appsvc/python:3.12_20260710.8.tuxprod.
+2026-08-06T07:47:00.3851913Z Container is starting.
+2026-08-06T07:47:00.3852799Z State: Starting, Action: MountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:43:36, LastErrorDetails: Container exited with exit code 3 during startup after 38.0s. Please inspect your container logs for more details., Details: Mounting volumes for webappkrant20260805., DetailsLevel: INFO
+2026-08-06T07:47:00.3853449Z Establishing user namespace if not established already.
+2026-08-06T07:47:00.3854030Z Establishing network if not established already.
+2026-08-06T07:47:00.3854726Z Mounting volumes.
+2026-08-06T07:47:00.3855787Z Nested mountpoint 
+2026-08-06T07:47:00.4430914Z Nested mountpoint volatile/logs
+2026-08-06T07:47:00.4832677Z Nested mountpoint 
+2026-08-06T07:47:00.4845378Z Nested mountpoint 
+2026-08-06T07:47:00.5632977Z Nested mountpoint 
+2026-08-06T07:47:00.6388282Z Nested mountpoint 
+2026-08-06T07:47:01.6104784Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:43:36, LastErrorDetails: Container exited with exit code 3 during startup after 38.0s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for webappkrant20260805. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-08-06T07:47:01.6105632Z Creating container.
+2026-08-06T07:47:01.6106276Z Creating pipes for streaming container io.
+2026-08-06T07:47:01.6106847Z Creating stdout named pipe at /podr/container/pipe/5d0de15dac99_webappkrant20260805/stdout_576f5de8684a498c9e82bdd9f4c06bd1.
+2026-08-06T07:47:01.6108689Z Successfully created stdout named pipe at: /podr/container/pipe/5d0de15dac99_webappkrant20260805/stdout_576f5de8684a498c9e82bdd9f4c06bd1.
+2026-08-06T07:47:01.6109261Z Opening named pipe /podr/container/pipe/5d0de15dac99_webappkrant20260805/stdout_576f5de8684a498c9e82bdd9f4c06bd1 for reading in non-blocking mode.
+2026-08-06T07:47:01.6110017Z Successfully opened named pipe: /podr/container/pipe/5d0de15dac99_webappkrant20260805/stdout_576f5de8684a498c9e82bdd9f4c06bd1.
+2026-08-06T07:47:01.6110605Z Successfully removed non-blocking flag from /podr/container/pipe/5d0de15dac99_webappkrant20260805/stdout_576f5de8684a498c9e82bdd9f4c06bd1.
+2026-08-06T07:47:01.6224860Z Creating stderr named pipe at /podr/container/pipe/5d0de15dac99_webappkrant20260805/stderr_23953bb640e540c6b9d6717cfd2803b4.
+2026-08-06T07:47:01.6406448Z Successfully created stderr named pipe at: /podr/container/pipe/5d0de15dac99_webappkrant20260805/stderr_23953bb640e540c6b9d6717cfd2803b4.
+2026-08-06T07:47:01.6424629Z Opening named pipe /podr/container/pipe/5d0de15dac99_webappkrant20260805/stderr_23953bb640e540c6b9d6717cfd2803b4 for reading in non-blocking mode.
+2026-08-06T07:47:01.6625456Z Successfully opened named pipe: /podr/container/pipe/5d0de15dac99_webappkrant20260805/stderr_23953bb640e540c6b9d6717cfd2803b4.
+2026-08-06T07:47:01.6627359Z Successfully removed non-blocking flag from /podr/container/pipe/5d0de15dac99_webappkrant20260805/stderr_23953bb640e540c6b9d6717cfd2803b4.
+2026-08-06T07:47:01.6630498Z Creating container with image: appsvc/python:3.12_20260710.8.tuxprod from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/appsvc/python:3.12_20260710.8.tuxprod
+2026-08-06T07:47:03.0160567Z Starting container: 5d0de15dac99_webappkrant20260805.
+2026-08-06T07:47:03.2745422Z Starting watchers and probes.
+2026-08-06T07:47:03.2828674Z Starting metrics collection.
+2026-08-06T07:47:03.3119522Z Container is running.
+2026-08-06T07:47:03.3120663Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:43:36, LastErrorDetails: Container exited with exit code 3 during startup after 38.0s. Please inspect your container logs for more details., Details: Container webappkrant20260805 successfully created and is running., DetailsLevel: INFO
+2026-08-06T07:47:03.7085520Z Container start method finished after 3619 ms.
+2026-08-06T07:47:03.7086933Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:43:36, LastErrorDetails: Container exited with exit code 3 during startup after 38.0s. Please inspect your container logs for more details., Details: Container webappkrant20260805 successfully created and is running., DetailsLevel: INFO
+2026-08-06T07:47:03.7087210Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:43:36, LastErrorDetails: Container exited with exit code 3 during startup after 38.0s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-08-06T07:47:57.5779077Z Container has finished running with exit code: 3.
+2026-08-06T07:47:57.5780142Z Container is terminating. Grace period: 5 seconds.
+2026-08-06T07:47:57.5888750Z Stop and delete container. Retry count = 0
+2026-08-06T07:47:57.5957328Z Stopping container: 5d0de15dac99_webappkrant20260805.
+2026-08-06T07:47:57.7796466Z Deleting container: 5d0de15dac99_webappkrant20260805. Retry count = 0
+2026-08-06T07:47:58.3172334Z Container spec TerminationMessagePolicy  path 
+2026-08-06T07:47:58.3246791Z Container is terminated. Total time elapsed: 739 ms.
+2026-08-06T07:47:58.3258809Z Site container: webappkrant20260805 terminated during site startup.
+2026-08-06T07:47:58.3266223Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:43:36, LastErrorDetails: Container exited with exit code 3 during startup after 38.0s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T07:47:58.4137932Z Site startup probe failed after 54.7024256 seconds.
+2026-08-06T07:47:58.7513263Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:47:58, LastErrorDetails: Container exited with exit code 3 during startup after 55.0s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T07:47:58.7797755Z Failed to start site. Revert by stopping site.
+2026-08-06T07:47:58.8068649Z State: Stopping, Action: StoppingSite, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:47:58, LastErrorDetails: Container exited with exit code 3 during startup after 55.0s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T07:47:58.8081810Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:47:58, LastErrorDetails: Container exited with exit code 3 during startup after 55.0s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T07:47:59.5119694Z Site container: webappkrant20260805_managedIdentity terminated during site startup.
+2026-08-06T07:47:59.5121112Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:47:58, LastErrorDetails: Container exited with exit code 3 during startup after 55.0s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T07:47:59.5122545Z Site: webappkrant20260805 stopped.
+2026-08-06T07:47:59.5414153Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:47:58, LastErrorDetails: Container exited with exit code 3 during startup after 55.0s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T07:48:00.5051502Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:47:58, LastErrorDetails: Container exited with exit code 3 during startup after 55.0s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T07:48:01.2024039Z Site: webappkrant20260805 will be blocked for 1 minutes till 08/06/2026 07:49:01
+2026-08-06T07:48:01.2025114Z State: Blocked, Action: StoppingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:47:58, LastErrorDetails: Container exited with exit code 3 during startup after 55.0s. Please inspect your container logs for more details., Details: Site: webappkrant20260805 will be blocked for 1 minutes till 08/06/2026 07:49:01, DetailsLevel: WARN
+2026-08-06T07:48:01.2203396Z State: Stopped, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:47:58, LastErrorDetails: Container exited with exit code 3 during startup after 55.0s. Please inspect your container logs for more details., Details: Site stopped at 08/06/2026 07:48:01 (UTC), DetailsLevel: WARN
+2026-08-06T07:48:02.9439173Z State: Stopped, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:47:58, LastErrorDetails: Container exited with exit code 3 during startup after 55.0s. Please inspect your container logs for more details., Details: Site stopped at 08/06/2026 07:48:01 (UTC), DetailsLevel: WARN
+2026-08-06T07:49:01.2154837Z Site: webappkrant20260805 is unblocked.
+2026-08-06T07:50:19.4075176Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:47:58, LastErrorDetails: Container exited with exit code 3 during startup after 55.0s. Please inspect your container logs for more details., Details: Site stopped at 08/06/2026 07:48:01 (UTC), DetailsLevel: WARN
+2026-08-06T07:50:22.9930038Z State: Starting, Action: StartingMsiContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:47:58, LastErrorDetails: Container exited with exit code 3 during startup after 55.0s. Please inspect your container logs for more details., Details: Site stopped at 08/06/2026 07:48:01 (UTC), DetailsLevel: WARN
+2026-08-06T07:50:38.9160206Z State: Starting, Action: StartingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:47:58, LastErrorDetails: Container exited with exit code 3 during startup after 55.0s. Please inspect your container logs for more details., Details: Site stopped at 08/06/2026 07:48:01 (UTC), DetailsLevel: WARN
+2026-08-06T07:50:38.9162628Z Container start method called.
+2026-08-06T07:50:38.9164164Z State: Starting, Action: PullingImage, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:47:58, LastErrorDetails: Container exited with exit code 3 during startup after 55.0s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.5:13209/appsvc/python:3.12_20260710.8.tuxprod for webappkrant20260805., DetailsLevel: INFO
+2026-08-06T07:50:38.9165608Z Establishing network.
+2026-08-06T07:50:38.9166573Z Pulling image: appsvc/python:3.12_20260710.8.tuxprod.
+2026-08-06T07:50:39.1889652Z Container is starting.
+2026-08-06T07:50:39.1894134Z State: Starting, Action: MountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:47:58, LastErrorDetails: Container exited with exit code 3 during startup after 55.0s. Please inspect your container logs for more details., Details: Mounting volumes for webappkrant20260805., DetailsLevel: INFO
+2026-08-06T07:50:39.1897314Z Establishing user namespace if not established already.
+2026-08-06T07:50:39.1900907Z Establishing network if not established already.
+2026-08-06T07:50:39.1903821Z Mounting volumes.
+2026-08-06T07:50:39.1905352Z Nested mountpoint 
+2026-08-06T07:50:39.2006068Z Nested mountpoint volatile/logs
+2026-08-06T07:50:39.2599897Z Nested mountpoint 
+2026-08-06T07:50:39.2605158Z Nested mountpoint 
+2026-08-06T07:50:39.2709802Z Nested mountpoint 
+2026-08-06T07:50:39.3670026Z Nested mountpoint 
+2026-08-06T07:50:40.0735278Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:47:58, LastErrorDetails: Container exited with exit code 3 during startup after 55.0s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for webappkrant20260805. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-08-06T07:50:40.0736483Z Creating container.
+2026-08-06T07:50:40.0737392Z Creating pipes for streaming container io.
+2026-08-06T07:50:40.0738016Z Creating stdout named pipe at /podr/container/pipe/3a1d1a9fa221_webappkrant20260805/stdout_b4bb0723a8b24f1d945ac5ba843c78be.
+2026-08-06T07:50:40.0740178Z Successfully created stdout named pipe at: /podr/container/pipe/3a1d1a9fa221_webappkrant20260805/stdout_b4bb0723a8b24f1d945ac5ba843c78be.
+2026-08-06T07:50:40.0740729Z Opening named pipe /podr/container/pipe/3a1d1a9fa221_webappkrant20260805/stdout_b4bb0723a8b24f1d945ac5ba843c78be for reading in non-blocking mode.
+2026-08-06T07:50:40.0761937Z Successfully opened named pipe: /podr/container/pipe/3a1d1a9fa221_webappkrant20260805/stdout_b4bb0723a8b24f1d945ac5ba843c78be.
+2026-08-06T07:50:40.0768875Z Successfully removed non-blocking flag from /podr/container/pipe/3a1d1a9fa221_webappkrant20260805/stdout_b4bb0723a8b24f1d945ac5ba843c78be.
+2026-08-06T07:50:40.0934969Z Creating stderr named pipe at /podr/container/pipe/3a1d1a9fa221_webappkrant20260805/stderr_53b2fcba52564d30b94702211dd0e372.
+2026-08-06T07:50:40.0944035Z Successfully created stderr named pipe at: /podr/container/pipe/3a1d1a9fa221_webappkrant20260805/stderr_53b2fcba52564d30b94702211dd0e372.
+2026-08-06T07:50:40.0951101Z Opening named pipe /podr/container/pipe/3a1d1a9fa221_webappkrant20260805/stderr_53b2fcba52564d30b94702211dd0e372 for reading in non-blocking mode.
+2026-08-06T07:50:40.0957547Z Successfully opened named pipe: /podr/container/pipe/3a1d1a9fa221_webappkrant20260805/stderr_53b2fcba52564d30b94702211dd0e372.
+2026-08-06T07:50:40.1051959Z Successfully removed non-blocking flag from /podr/container/pipe/3a1d1a9fa221_webappkrant20260805/stderr_53b2fcba52564d30b94702211dd0e372.
+2026-08-06T07:50:40.1054911Z Creating container with image: appsvc/python:3.12_20260710.8.tuxprod from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/appsvc/python:3.12_20260710.8.tuxprod
+2026-08-06T07:50:40.9373895Z Starting container: 3a1d1a9fa221_webappkrant20260805.
+2026-08-06T07:50:41.0423042Z Starting watchers and probes.
+2026-08-06T07:50:41.0434690Z Starting metrics collection.
+2026-08-06T07:50:41.0445335Z Container is running.
+2026-08-06T07:50:41.0638939Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:47:58, LastErrorDetails: Container exited with exit code 3 during startup after 55.0s. Please inspect your container logs for more details., Details: Container webappkrant20260805 successfully created and is running., DetailsLevel: INFO
+2026-08-06T07:50:41.3075094Z Container start method finished after 2344 ms.
+2026-08-06T07:50:41.3078476Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:47:58, LastErrorDetails: Container exited with exit code 3 during startup after 55.0s. Please inspect your container logs for more details., Details: Container webappkrant20260805 successfully created and is running., DetailsLevel: INFO
+2026-08-06T07:50:41.3079331Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:47:58, LastErrorDetails: Container exited with exit code 3 during startup after 55.0s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-08-06T07:51:15.6828841Z Container has finished running with exit code: 3.
+2026-08-06T07:51:15.6834063Z Container is terminating. Grace period: 5 seconds.
+2026-08-06T07:51:15.6934534Z Stop and delete container. Retry count = 0
+2026-08-06T07:51:15.6935905Z Stopping container: 3a1d1a9fa221_webappkrant20260805.
+2026-08-06T07:51:15.8620794Z Deleting container: 3a1d1a9fa221_webappkrant20260805. Retry count = 0
+2026-08-06T07:51:16.2544351Z Container spec TerminationMessagePolicy  path 
+2026-08-06T07:51:16.2558516Z Container is terminated. Total time elapsed: 572 ms.
+2026-08-06T07:51:16.2560113Z Site container: webappkrant20260805 terminated during site startup.
+2026-08-06T07:51:16.2562161Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:47:58, LastErrorDetails: Container exited with exit code 3 during startup after 55.0s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T07:51:16.2848709Z Site startup probe failed after 34.9762452 seconds.
+2026-08-06T07:51:16.5592098Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:51:16, LastErrorDetails: Container exited with exit code 3 during startup after 35.2s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T07:51:16.5700810Z Failed to start site. Revert by stopping site.
+2026-08-06T07:51:16.5775809Z State: Stopping, Action: StoppingSite, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:51:16, LastErrorDetails: Container exited with exit code 3 during startup after 35.2s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T07:51:16.5780850Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:51:16, LastErrorDetails: Container exited with exit code 3 during startup after 35.2s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T07:51:17.0361460Z Site container: webappkrant20260805_managedIdentity terminated during site startup.
+2026-08-06T07:51:17.0367225Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:51:16, LastErrorDetails: Container exited with exit code 3 during startup after 35.2s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T07:51:17.0368448Z Site: webappkrant20260805 stopped.
+2026-08-06T07:51:17.0559933Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:51:16, LastErrorDetails: Container exited with exit code 3 during startup after 35.2s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T07:51:17.7857427Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:51:16, LastErrorDetails: Container exited with exit code 3 during startup after 35.2s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T07:51:18.1095448Z Site: webappkrant20260805 will be blocked for 2 minutes till 08/06/2026 07:53:18
+2026-08-06T07:51:18.1109851Z State: Blocked, Action: StoppingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:51:16, LastErrorDetails: Container exited with exit code 3 during startup after 35.2s. Please inspect your container logs for more details., Details: Site: webappkrant20260805 will be blocked for 2 minutes till 08/06/2026 07:53:18, DetailsLevel: WARN
+2026-08-06T07:51:18.1192094Z State: Stopped, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:51:16, LastErrorDetails: Container exited with exit code 3 during startup after 35.2s. Please inspect your container logs for more details., Details: Site stopped at 08/06/2026 07:51:18 (UTC), DetailsLevel: WARN
+2026-08-06T07:51:19.3764363Z State: Stopped, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:51:16, LastErrorDetails: Container exited with exit code 3 during startup after 35.2s. Please inspect your container logs for more details., Details: Site stopped at 08/06/2026 07:51:18 (UTC), DetailsLevel: WARN
+2026-08-06T07:52:34.0648852Z State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:51:16, LastErrorDetails: Container exited with exit code 3 during startup after 35.2s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 08/06/2026 07:53:18, DetailsLevel: WARN
+2026-08-06T07:52:34.0649809Z Start site prohibitted because the site is being blocked.
+2026-08-06T07:53:18.1129142Z Site: webappkrant20260805 is unblocked.
+2026-08-06T07:57:34.5283568Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:51:16, LastErrorDetails: Container exited with exit code 3 during startup after 35.2s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 08/06/2026 07:53:18, DetailsLevel: WARN
+2026-08-06T07:57:37.7179343Z State: Starting, Action: StartingMsiContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:51:16, LastErrorDetails: Container exited with exit code 3 during startup after 35.2s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 08/06/2026 07:53:18, DetailsLevel: WARN
+2026-08-06T07:57:53.5709555Z State: Starting, Action: StartingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:51:16, LastErrorDetails: Container exited with exit code 3 during startup after 35.2s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 08/06/2026 07:53:18, DetailsLevel: WARN
+2026-08-06T07:57:53.5896256Z Container start method called.
+2026-08-06T07:57:53.5906451Z State: Starting, Action: PullingImage, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:51:16, LastErrorDetails: Container exited with exit code 3 during startup after 35.2s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.5:13209/appsvc/python:3.12_20260710.8.tuxprod for webappkrant20260805., DetailsLevel: INFO
+2026-08-06T07:57:53.6271807Z Establishing network.
+2026-08-06T07:57:53.6282810Z Pulling image: appsvc/python:3.12_20260710.8.tuxprod.
+2026-08-06T07:57:53.9315353Z Container is starting.
+2026-08-06T07:57:53.9320911Z State: Starting, Action: MountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:51:16, LastErrorDetails: Container exited with exit code 3 during startup after 35.2s. Please inspect your container logs for more details., Details: Mounting volumes for webappkrant20260805., DetailsLevel: INFO
+2026-08-06T07:57:53.9321753Z Establishing user namespace if not established already.
+2026-08-06T07:57:53.9322383Z Establishing network if not established already.
+2026-08-06T07:57:53.9323284Z Mounting volumes.
+2026-08-06T07:57:53.9324652Z Nested mountpoint 
+2026-08-06T07:57:53.9410057Z Nested mountpoint volatile/logs
+2026-08-06T07:57:53.9731208Z Nested mountpoint 
+2026-08-06T07:57:53.9736004Z Nested mountpoint 
+2026-08-06T07:57:54.0408256Z Nested mountpoint 
+2026-08-06T07:57:54.0737214Z Nested mountpoint 
+2026-08-06T07:57:54.6749031Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:51:16, LastErrorDetails: Container exited with exit code 3 during startup after 35.2s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for webappkrant20260805. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-08-06T07:57:54.6810416Z Creating container.
+2026-08-06T07:57:54.6811814Z Creating pipes for streaming container io.
+2026-08-06T07:57:54.6815622Z Creating stdout named pipe at /podr/container/pipe/af6dc855274e_webappkrant20260805/stdout_44b53da2b6594d95989f30e08f9d97bb.
+2026-08-06T07:57:54.6820637Z Successfully created stdout named pipe at: /podr/container/pipe/af6dc855274e_webappkrant20260805/stdout_44b53da2b6594d95989f30e08f9d97bb.
+2026-08-06T07:57:54.6822568Z Opening named pipe /podr/container/pipe/af6dc855274e_webappkrant20260805/stdout_44b53da2b6594d95989f30e08f9d97bb for reading in non-blocking mode.
+2026-08-06T07:57:54.6823950Z Successfully opened named pipe: /podr/container/pipe/af6dc855274e_webappkrant20260805/stdout_44b53da2b6594d95989f30e08f9d97bb.
+2026-08-06T07:57:54.6845905Z Successfully removed non-blocking flag from /podr/container/pipe/af6dc855274e_webappkrant20260805/stdout_44b53da2b6594d95989f30e08f9d97bb.
+2026-08-06T07:57:54.7023665Z Creating stderr named pipe at /podr/container/pipe/af6dc855274e_webappkrant20260805/stderr_e4e3ebd7f0b04e8a9f195d4e6845d3b2.
+2026-08-06T07:57:54.7025478Z Successfully created stderr named pipe at: /podr/container/pipe/af6dc855274e_webappkrant20260805/stderr_e4e3ebd7f0b04e8a9f195d4e6845d3b2.
+2026-08-06T07:57:54.7026067Z Opening named pipe /podr/container/pipe/af6dc855274e_webappkrant20260805/stderr_e4e3ebd7f0b04e8a9f195d4e6845d3b2 for reading in non-blocking mode.
+2026-08-06T07:57:54.7026800Z Successfully opened named pipe: /podr/container/pipe/af6dc855274e_webappkrant20260805/stderr_e4e3ebd7f0b04e8a9f195d4e6845d3b2.
+2026-08-06T07:57:54.7027429Z Successfully removed non-blocking flag from /podr/container/pipe/af6dc855274e_webappkrant20260805/stderr_e4e3ebd7f0b04e8a9f195d4e6845d3b2.
+2026-08-06T07:57:54.7028574Z Creating container with image: appsvc/python:3.12_20260710.8.tuxprod from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/appsvc/python:3.12_20260710.8.tuxprod
+2026-08-06T07:57:55.5835497Z Starting container: af6dc855274e_webappkrant20260805.
+2026-08-06T07:57:55.6536981Z Starting watchers and probes.
+2026-08-06T07:57:55.6562894Z Starting metrics collection.
+2026-08-06T07:57:55.6630215Z Container is running.
+2026-08-06T07:57:55.6634387Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:51:16, LastErrorDetails: Container exited with exit code 3 during startup after 35.2s. Please inspect your container logs for more details., Details: Container webappkrant20260805 successfully created and is running., DetailsLevel: INFO
+2026-08-06T07:57:56.0513479Z Container start method finished after 2405 ms.
+2026-08-06T07:57:56.0524377Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:51:16, LastErrorDetails: Container exited with exit code 3 during startup after 35.2s. Please inspect your container logs for more details., Details: Container webappkrant20260805 successfully created and is running., DetailsLevel: INFO
+2026-08-06T07:57:56.0534258Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:51:16, LastErrorDetails: Container exited with exit code 3 during startup after 35.2s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-08-06T07:58:37.7464996Z Container has finished running with exit code: 3.
+2026-08-06T07:58:37.7466066Z Container is terminating. Grace period: 5 seconds.
+2026-08-06T07:58:37.7949984Z Stop and delete container. Retry count = 0
+2026-08-06T07:58:37.8030436Z Stopping container: af6dc855274e_webappkrant20260805.
+2026-08-06T07:58:37.8918459Z Deleting container: af6dc855274e_webappkrant20260805. Retry count = 0
+2026-08-06T07:58:38.3540005Z Container spec TerminationMessagePolicy  path 
+2026-08-06T07:58:38.3643932Z Container is terminated. Total time elapsed: 578 ms.
+2026-08-06T07:58:38.3645266Z Site container: webappkrant20260805 terminated during site startup.
+2026-08-06T07:58:38.3646766Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:51:16, LastErrorDetails: Container exited with exit code 3 during startup after 35.2s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T07:58:38.4216989Z Site startup probe failed after 42.3540179 seconds.
+2026-08-06T07:58:38.7313074Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:58:38, LastErrorDetails: Container exited with exit code 3 during startup after 42.7s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T07:58:38.7589463Z Failed to start site. Revert by stopping site.
+2026-08-06T07:58:38.7593557Z State: Stopping, Action: StoppingSite, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:58:38, LastErrorDetails: Container exited with exit code 3 during startup after 42.7s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T07:58:38.7595494Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:58:38, LastErrorDetails: Container exited with exit code 3 during startup after 42.7s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T07:58:39.3615641Z Site container: webappkrant20260805_managedIdentity terminated during site startup.
+2026-08-06T07:58:39.3681914Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:58:38, LastErrorDetails: Container exited with exit code 3 during startup after 42.7s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T07:58:39.3688568Z Site: webappkrant20260805 stopped.
+2026-08-06T07:58:39.3887528Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:58:38, LastErrorDetails: Container exited with exit code 3 during startup after 42.7s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T07:58:40.1419994Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:58:38, LastErrorDetails: Container exited with exit code 3 during startup after 42.7s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T07:58:40.7693092Z Site: webappkrant20260805 will be blocked for 2 minutes till 08/06/2026 08:00:40
+2026-08-06T07:58:40.7701138Z State: Blocked, Action: StoppingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:58:38, LastErrorDetails: Container exited with exit code 3 during startup after 42.7s. Please inspect your container logs for more details., Details: Site: webappkrant20260805 will be blocked for 2 minutes till 08/06/2026 08:00:40, DetailsLevel: WARN
+2026-08-06T07:58:40.7787807Z State: Stopped, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:58:38, LastErrorDetails: Container exited with exit code 3 during startup after 42.7s. Please inspect your container logs for more details., Details: Site stopped at 08/06/2026 07:58:40 (UTC), DetailsLevel: WARN
+2026-08-06T07:58:41.5522172Z State: Stopped, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:58:38, LastErrorDetails: Container exited with exit code 3 during startup after 42.7s. Please inspect your container logs for more details., Details: Site stopped at 08/06/2026 07:58:40 (UTC), DetailsLevel: WARN
+2026-08-06T07:59:02.6146811Z State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:58:38, LastErrorDetails: Container exited with exit code 3 during startup after 42.7s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 08/06/2026 08:00:40, DetailsLevel: WARN
+2026-08-06T07:59:02.6148515Z Start site prohibitted because the site is being blocked.
+2026-08-06T08:00:40.7682026Z Site: webappkrant20260805 is unblocked.
+2026-08-06T08:02:35.1742044Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:58:38, LastErrorDetails: Container exited with exit code 3 during startup after 42.7s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 08/06/2026 08:00:40, DetailsLevel: WARN
+2026-08-06T08:02:38.2235002Z State: Starting, Action: StartingMsiContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:58:38, LastErrorDetails: Container exited with exit code 3 during startup after 42.7s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 08/06/2026 08:00:40, DetailsLevel: WARN
+2026-08-06T08:02:54.3167970Z State: Starting, Action: StartingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:58:38, LastErrorDetails: Container exited with exit code 3 during startup after 42.7s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 08/06/2026 08:00:40, DetailsLevel: WARN
+2026-08-06T08:02:54.3184303Z Container start method called.
+2026-08-06T08:02:54.3191483Z State: Starting, Action: PullingImage, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:58:38, LastErrorDetails: Container exited with exit code 3 during startup after 42.7s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.5:13209/appsvc/python:3.12_20260710.8.tuxprod for webappkrant20260805., DetailsLevel: INFO
+2026-08-06T08:02:54.3192776Z Establishing network.
+2026-08-06T08:02:54.3252334Z Pulling image: appsvc/python:3.12_20260710.8.tuxprod.
+2026-08-06T08:02:54.7370151Z Container is starting.
+2026-08-06T08:02:54.7371656Z State: Starting, Action: MountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:58:38, LastErrorDetails: Container exited with exit code 3 during startup after 42.7s. Please inspect your container logs for more details., Details: Mounting volumes for webappkrant20260805., DetailsLevel: INFO
+2026-08-06T08:02:54.7372799Z Establishing user namespace if not established already.
+2026-08-06T08:02:54.7378844Z Establishing network if not established already.
+2026-08-06T08:02:54.7380470Z Mounting volumes.
+2026-08-06T08:02:54.7384319Z Nested mountpoint 
+2026-08-06T08:02:54.7695405Z Nested mountpoint volatile/logs
+2026-08-06T08:02:54.8164564Z Nested mountpoint 
+2026-08-06T08:02:54.8568468Z Nested mountpoint 
+2026-08-06T08:02:54.8575822Z Nested mountpoint 
+2026-08-06T08:02:54.8879796Z Nested mountpoint 
+2026-08-06T08:02:55.4620799Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:58:38, LastErrorDetails: Container exited with exit code 3 during startup after 42.7s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for webappkrant20260805. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-08-06T08:02:55.4624349Z Creating container.
+2026-08-06T08:02:55.4625267Z Creating pipes for streaming container io.
+2026-08-06T08:02:55.4626575Z Creating stdout named pipe at /podr/container/pipe/694ed79ff1df_webappkrant20260805/stdout_8918937b6fd543f79b569b585c79d5df.
+2026-08-06T08:02:55.4628773Z Successfully created stdout named pipe at: /podr/container/pipe/694ed79ff1df_webappkrant20260805/stdout_8918937b6fd543f79b569b585c79d5df.
+2026-08-06T08:02:55.4629403Z Opening named pipe /podr/container/pipe/694ed79ff1df_webappkrant20260805/stdout_8918937b6fd543f79b569b585c79d5df for reading in non-blocking mode.
+2026-08-06T08:02:55.4630161Z Successfully opened named pipe: /podr/container/pipe/694ed79ff1df_webappkrant20260805/stdout_8918937b6fd543f79b569b585c79d5df.
+2026-08-06T08:02:55.4630668Z Successfully removed non-blocking flag from /podr/container/pipe/694ed79ff1df_webappkrant20260805/stdout_8918937b6fd543f79b569b585c79d5df.
+2026-08-06T08:02:55.4631671Z Creating stderr named pipe at /podr/container/pipe/694ed79ff1df_webappkrant20260805/stderr_70b58a83aa444062ab14ef68e6efee2e.
+2026-08-06T08:02:55.4632677Z Successfully created stderr named pipe at: /podr/container/pipe/694ed79ff1df_webappkrant20260805/stderr_70b58a83aa444062ab14ef68e6efee2e.
+2026-08-06T08:02:55.4633260Z Opening named pipe /podr/container/pipe/694ed79ff1df_webappkrant20260805/stderr_70b58a83aa444062ab14ef68e6efee2e for reading in non-blocking mode.
+2026-08-06T08:02:55.4634064Z Successfully opened named pipe: /podr/container/pipe/694ed79ff1df_webappkrant20260805/stderr_70b58a83aa444062ab14ef68e6efee2e.
+2026-08-06T08:02:55.4634560Z Successfully removed non-blocking flag from /podr/container/pipe/694ed79ff1df_webappkrant20260805/stderr_70b58a83aa444062ab14ef68e6efee2e.
+2026-08-06T08:02:55.4635768Z Creating container with image: appsvc/python:3.12_20260710.8.tuxprod from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/appsvc/python:3.12_20260710.8.tuxprod
+2026-08-06T08:02:56.5931952Z Starting container: 694ed79ff1df_webappkrant20260805.
+2026-08-06T08:02:56.6926339Z Starting watchers and probes.
+2026-08-06T08:02:56.7018238Z Starting metrics collection.
+2026-08-06T08:02:56.7216474Z Container is running.
+2026-08-06T08:02:56.7387370Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:58:38, LastErrorDetails: Container exited with exit code 3 during startup after 42.7s. Please inspect your container logs for more details., Details: Container webappkrant20260805 successfully created and is running., DetailsLevel: INFO
+2026-08-06T08:02:57.2452439Z Container start method finished after 2926 ms.
+2026-08-06T08:02:57.2454372Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:58:38, LastErrorDetails: Container exited with exit code 3 during startup after 42.7s. Please inspect your container logs for more details., Details: Container webappkrant20260805 successfully created and is running., DetailsLevel: INFO
+2026-08-06T08:02:57.2454661Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:58:38, LastErrorDetails: Container exited with exit code 3 during startup after 42.7s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-08-06T08:03:32.0051893Z Site startup probe succeeded after 34.7203711 seconds.
+2026-08-06T08:03:32.3833791Z State: Starting, Action: WarmUpProbeSucceeded, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:58:38, LastErrorDetails: Container exited with exit code 3 during startup after 42.7s. Please inspect your container logs for more details., Details: Site startup probe succeeded after 34.7203711 seconds., DetailsLevel: INFO
+2026-08-06T08:03:32.9610754Z Site is running with deployment version: d4d8f8f1-e268-4793-9ff7-2f560e86fc36
+2026-08-06T08:03:32.9616460Z Site started.
+2026-08-06T08:03:32.9618375Z State: Started, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:58:38, LastErrorDetails: Container exited with exit code 3 during startup after 42.7s. Please inspect your container logs for more details., Details: Site started at 08/06/2026 08:03:32 (UTC), DetailsLevel: INFO
+2026-08-06T08:03:33.0117864Z Site is running with patch version PYTHON-3.12.13
+2026-08-06T08:23:17.8073192Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-08-06T08:23:25.0122543Z State: Starting, Action: StartingMsiContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-08-06T08:23:55.0314808Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-08-06T08:23:55.0330445Z Container start method called.
+2026-08-06T08:23:55.0400933Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.4:13209/appsvc/python:3.12_20260710.8.tuxprod for webappkrant20260805., DetailsLevel: INFO
+2026-08-06T08:23:55.0402470Z Establishing network.
+2026-08-06T08:23:55.0403763Z Pulling image: appsvc/python:3.12_20260710.8.tuxprod.
+2026-08-06T08:23:56.0867207Z Image appsvc/python:3.12_20260710.8.tuxprod is pulled from registry 10.1.0.4:13209
+2026-08-06T08:23:56.0868226Z Container is starting.
+2026-08-06T08:23:56.0869102Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for webappkrant20260805., DetailsLevel: INFO
+2026-08-06T08:23:56.0869657Z Establishing user namespace if not established already.
+2026-08-06T08:23:56.0870268Z Establishing network if not established already.
+2026-08-06T08:23:56.0871178Z Mounting volumes.
+2026-08-06T08:23:56.0872130Z Nested mountpoint 
+2026-08-06T08:23:56.3142620Z Nested mountpoint volatile/logs
+2026-08-06T08:23:56.4297333Z Nested mountpoint 
+2026-08-06T08:23:56.7357928Z Nested mountpoint 
+2026-08-06T08:23:56.9889962Z Nested mountpoint 
+2026-08-06T08:23:57.1569735Z Nested mountpoint 
+2026-08-06T08:23:58.4888606Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for webappkrant20260805. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-08-06T08:23:58.4889509Z Creating container.
+2026-08-06T08:23:58.4890208Z Creating pipes for streaming container io.
+2026-08-06T08:23:58.4890803Z Creating stdout named pipe at /podr/container/pipe/cb9eb32eda4a_webappkrant20260805/stdout_8aeaa681e8f341f7bd8d80be00f050c7.
+2026-08-06T08:23:58.4892615Z Successfully created stdout named pipe at: /podr/container/pipe/cb9eb32eda4a_webappkrant20260805/stdout_8aeaa681e8f341f7bd8d80be00f050c7.
+2026-08-06T08:23:58.4893223Z Opening named pipe /podr/container/pipe/cb9eb32eda4a_webappkrant20260805/stdout_8aeaa681e8f341f7bd8d80be00f050c7 for reading in non-blocking mode.
+2026-08-06T08:23:58.4893946Z Successfully opened named pipe: /podr/container/pipe/cb9eb32eda4a_webappkrant20260805/stdout_8aeaa681e8f341f7bd8d80be00f050c7.
+2026-08-06T08:23:58.4894877Z Successfully removed non-blocking flag from /podr/container/pipe/cb9eb32eda4a_webappkrant20260805/stdout_8aeaa681e8f341f7bd8d80be00f050c7.
+2026-08-06T08:23:58.5087981Z Creating stderr named pipe at /podr/container/pipe/cb9eb32eda4a_webappkrant20260805/stderr_f8dba6fc166e4751996ae2db49aa823c.
+2026-08-06T08:23:58.5090419Z Successfully created stderr named pipe at: /podr/container/pipe/cb9eb32eda4a_webappkrant20260805/stderr_f8dba6fc166e4751996ae2db49aa823c.
+2026-08-06T08:23:58.5091088Z Opening named pipe /podr/container/pipe/cb9eb32eda4a_webappkrant20260805/stderr_f8dba6fc166e4751996ae2db49aa823c for reading in non-blocking mode.
+2026-08-06T08:23:58.5091886Z Successfully opened named pipe: /podr/container/pipe/cb9eb32eda4a_webappkrant20260805/stderr_f8dba6fc166e4751996ae2db49aa823c.
+2026-08-06T08:23:58.5092437Z Successfully removed non-blocking flag from /podr/container/pipe/cb9eb32eda4a_webappkrant20260805/stderr_f8dba6fc166e4751996ae2db49aa823c.
+2026-08-06T08:23:58.5590366Z Creating container with image: appsvc/python:3.12_20260710.8.tuxprod from registry: 10.1.0.4:13209 and fully qualified image name: 10.1.0.4:13209/appsvc/python:3.12_20260710.8.tuxprod
+2026-08-06T08:24:00.2648409Z Starting container: cb9eb32eda4a_webappkrant20260805.
+2026-08-06T08:24:00.4964596Z Starting watchers and probes.
+2026-08-06T08:24:00.4968611Z Starting metrics collection.
+2026-08-06T08:24:00.5051246Z Container is running.
+2026-08-06T08:24:00.5143847Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container webappkrant20260805 successfully created and is running., DetailsLevel: INFO
+2026-08-06T08:24:00.7348425Z Container start method finished after 5668 ms.
+2026-08-06T08:24:00.8320991Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container webappkrant20260805 successfully created and is running., DetailsLevel: INFO
+2026-08-06T08:24:00.8330208Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-08-06T08:25:04.1685677Z Container has finished running with exit code: 3.
+2026-08-06T08:25:04.1765653Z Container is terminating. Grace period: 5 seconds.
+2026-08-06T08:25:04.1952945Z Stop and delete container. Retry count = 0
+2026-08-06T08:25:04.1969059Z Stopping container: cb9eb32eda4a_webappkrant20260805.
+2026-08-06T08:25:04.3224905Z Deleting container: cb9eb32eda4a_webappkrant20260805. Retry count = 0
+2026-08-06T08:25:04.7503555Z Container spec TerminationMessagePolicy  path 
+2026-08-06T08:25:04.7739298Z Container is terminated. Total time elapsed: 584 ms.
+2026-08-06T08:25:04.7749276Z Site container: webappkrant20260805 terminated during site startup.
+2026-08-06T08:25:04.7976279Z State: Stopping, Action: CancellingStartup, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T08:25:04.9337853Z Site startup probe failed after 64.0104038 seconds.
+2026-08-06T08:25:05.4041368Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:25:05, LastErrorDetails: Container exited with exit code 3 during startup after 64.3s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T08:25:05.4561393Z Failed to start site. Revert by stopping site.
+2026-08-06T08:25:05.4755236Z State: Stopping, Action: StoppingSite, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:25:05, LastErrorDetails: Container exited with exit code 3 during startup after 64.3s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T08:25:05.4786076Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:25:05, LastErrorDetails: Container exited with exit code 3 during startup after 64.3s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T08:25:06.2265543Z Site container: webappkrant20260805_managedIdentity terminated during site startup.
+2026-08-06T08:25:06.2272187Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:25:05, LastErrorDetails: Container exited with exit code 3 during startup after 64.3s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T08:25:06.2277154Z Site: webappkrant20260805 stopped.
+2026-08-06T08:25:30.3197926Z State: Stopping, Action: StoppingSite, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:58:38, LastErrorDetails: Container exited with exit code 3 during startup after 42.7s. Please inspect your container logs for more details., Details: Site started at 08/06/2026 08:03:32 (UTC), DetailsLevel: INFO
+2026-08-06T08:25:30.3446183Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 07:58:38, LastErrorDetails: Container exited with exit code 3 during startup after 42.7s. Please inspect your container logs for more details., Details: Site started at 08/06/2026 08:03:32 (UTC), DetailsLevel: INFO
+2026-08-06T08:25:30.3485984Z Container is terminating. Grace period: 5 seconds.
+2026-08-06T08:25:30.3692185Z Stop and delete container. Retry count = 0
+2026-08-06T08:25:30.3693117Z Stopping container: 694ed79ff1df_webappkrant20260805.
+2026-08-06T08:25:35.5443487Z Deleting container: 694ed79ff1df_webappkrant20260805. Retry count = 0
+2026-08-06T08:25:36.0226553Z Container spec TerminationMessagePolicy  path 
+2026-08-06T08:25:36.0290398Z Container is terminated. Total time elapsed: 5674 ms.
+2026-08-06T08:25:36.6644075Z Site: webappkrant20260805 stopped.
+2026-08-06T08:25:06.2578342Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:25:05, LastErrorDetails: Container exited with exit code 3 during startup after 64.3s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T08:25:07.9064400Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:25:05, LastErrorDetails: Container exited with exit code 3 during startup after 64.3s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T08:25:08.9636029Z State: Stopped, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:25:05, LastErrorDetails: Container exited with exit code 3 during startup after 64.3s. Please inspect your container logs for more details., Details: Site stopped at 08/06/2026 08:25:08 (UTC), DetailsLevel: ERR
+2026-08-06T08:25:09.9538452Z State: Stopped, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:25:05, LastErrorDetails: Container exited with exit code 3 during startup after 64.3s. Please inspect your container logs for more details., Details: Site stopped at 08/06/2026 08:25:08 (UTC), DetailsLevel: ERR
+2026-08-06T08:25:41.4358650Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:25:05, LastErrorDetails: Container exited with exit code 3 during startup after 64.3s. Please inspect your container logs for more details., Details: Site stopped at 08/06/2026 08:25:08 (UTC), DetailsLevel: ERR
+2026-08-06T08:25:44.7720349Z State: Starting, Action: StartingMsiContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:25:05, LastErrorDetails: Container exited with exit code 3 during startup after 64.3s. Please inspect your container logs for more details., Details: Site stopped at 08/06/2026 08:25:08 (UTC), DetailsLevel: ERR
+2026-08-06T08:26:05.8045543Z State: Starting, Action: StartingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:25:05, LastErrorDetails: Container exited with exit code 3 during startup after 64.3s. Please inspect your container logs for more details., Details: Site stopped at 08/06/2026 08:25:08 (UTC), DetailsLevel: ERR
+2026-08-06T08:26:05.8047320Z Container start method called.
+2026-08-06T08:26:05.8047826Z State: Starting, Action: PullingImage, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:25:05, LastErrorDetails: Container exited with exit code 3 during startup after 64.3s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.4:13209/appsvc/python:3.12_20260710.8.tuxprod for webappkrant20260805., DetailsLevel: INFO
+2026-08-06T08:26:05.8219697Z Establishing network.
+2026-08-06T08:26:05.8517626Z Pulling image: appsvc/python:3.12_20260710.8.tuxprod.
+2026-08-06T08:26:06.2056645Z Container is starting.
+2026-08-06T08:26:06.2058263Z State: Starting, Action: MountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:25:05, LastErrorDetails: Container exited with exit code 3 during startup after 64.3s. Please inspect your container logs for more details., Details: Mounting volumes for webappkrant20260805., DetailsLevel: INFO
+2026-08-06T08:26:06.2058866Z Establishing user namespace if not established already.
+2026-08-06T08:26:06.2059654Z Establishing network if not established already.
+2026-08-06T08:26:06.2060544Z Mounting volumes.
+2026-08-06T08:26:06.2068178Z Nested mountpoint 
+2026-08-06T08:26:06.2351861Z Nested mountpoint volatile/logs
+2026-08-06T08:26:06.3939141Z Nested mountpoint 
+2026-08-06T08:26:06.4030859Z Nested mountpoint 
+2026-08-06T08:26:06.4247249Z Nested mountpoint 
+2026-08-06T08:26:06.5319789Z Nested mountpoint 
+2026-08-06T08:26:07.3896315Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:25:05, LastErrorDetails: Container exited with exit code 3 during startup after 64.3s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for webappkrant20260805. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-08-06T08:26:07.3897619Z Creating container.
+2026-08-06T08:26:07.3898658Z Creating pipes for streaming container io.
+2026-08-06T08:26:07.3970439Z Creating stdout named pipe at /podr/container/pipe/25f03c48bc61_webappkrant20260805/stdout_8920c58032c6417a8201eb6bfc6d79e0.
+2026-08-06T08:26:07.3973105Z Successfully created stdout named pipe at: /podr/container/pipe/25f03c48bc61_webappkrant20260805/stdout_8920c58032c6417a8201eb6bfc6d79e0.
+2026-08-06T08:26:07.4001617Z Opening named pipe /podr/container/pipe/25f03c48bc61_webappkrant20260805/stdout_8920c58032c6417a8201eb6bfc6d79e0 for reading in non-blocking mode.
+2026-08-06T08:26:07.4193670Z Successfully opened named pipe: /podr/container/pipe/25f03c48bc61_webappkrant20260805/stdout_8920c58032c6417a8201eb6bfc6d79e0.
+2026-08-06T08:26:07.4293611Z Successfully removed non-blocking flag from /podr/container/pipe/25f03c48bc61_webappkrant20260805/stdout_8920c58032c6417a8201eb6bfc6d79e0.
+2026-08-06T08:26:07.4295759Z Creating stderr named pipe at /podr/container/pipe/25f03c48bc61_webappkrant20260805/stderr_19c2139f8a9a435b8832ebab106241c4.
+2026-08-06T08:26:07.4297743Z Successfully created stderr named pipe at: /podr/container/pipe/25f03c48bc61_webappkrant20260805/stderr_19c2139f8a9a435b8832ebab106241c4.
+2026-08-06T08:26:07.4365195Z Opening named pipe /podr/container/pipe/25f03c48bc61_webappkrant20260805/stderr_19c2139f8a9a435b8832ebab106241c4 for reading in non-blocking mode.
+2026-08-06T08:26:07.4367314Z Successfully opened named pipe: /podr/container/pipe/25f03c48bc61_webappkrant20260805/stderr_19c2139f8a9a435b8832ebab106241c4.
+2026-08-06T08:26:07.4368400Z Successfully removed non-blocking flag from /podr/container/pipe/25f03c48bc61_webappkrant20260805/stderr_19c2139f8a9a435b8832ebab106241c4.
+2026-08-06T08:26:07.4388811Z Creating container with image: appsvc/python:3.12_20260710.8.tuxprod from registry: 10.1.0.4:13209 and fully qualified image name: 10.1.0.4:13209/appsvc/python:3.12_20260710.8.tuxprod
+2026-08-06T08:26:08.6189987Z Starting container: 25f03c48bc61_webappkrant20260805.
+2026-08-06T08:26:08.7241401Z Starting watchers and probes.
+2026-08-06T08:26:08.7305320Z Starting metrics collection.
+2026-08-06T08:26:08.7310559Z Container is running.
+2026-08-06T08:26:08.7328251Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:25:05, LastErrorDetails: Container exited with exit code 3 during startup after 64.3s. Please inspect your container logs for more details., Details: Container webappkrant20260805 successfully created and is running., DetailsLevel: INFO
+2026-08-06T08:26:08.9025673Z Container start method finished after 3097 ms.
+2026-08-06T08:26:08.9028341Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:25:05, LastErrorDetails: Container exited with exit code 3 during startup after 64.3s. Please inspect your container logs for more details., Details: Container webappkrant20260805 successfully created and is running., DetailsLevel: INFO
+2026-08-06T08:26:08.9029042Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:25:05, LastErrorDetails: Container exited with exit code 3 during startup after 64.3s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-08-06T08:26:48.2241486Z Container has finished running with exit code: 3.
+2026-08-06T08:26:48.2242254Z Container is terminating. Grace period: 5 seconds.
+2026-08-06T08:26:48.2323813Z Stop and delete container. Retry count = 0
+2026-08-06T08:26:48.2527942Z Stopping container: 25f03c48bc61_webappkrant20260805.
+2026-08-06T08:26:48.3909364Z Deleting container: 25f03c48bc61_webappkrant20260805. Retry count = 0
+2026-08-06T08:26:48.6942835Z Container spec TerminationMessagePolicy  path 
+2026-08-06T08:26:48.6950748Z Container is terminated. Total time elapsed: 470 ms.
+2026-08-06T08:26:48.6961850Z Site container: webappkrant20260805 terminated during site startup.
+2026-08-06T08:26:48.6966369Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:25:05, LastErrorDetails: Container exited with exit code 3 during startup after 64.3s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T08:26:48.7244215Z Site startup probe failed after 39.8211321 seconds.
+2026-08-06T08:26:49.1401065Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:26:49, LastErrorDetails: Container exited with exit code 3 during startup after 40.0s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T08:26:49.1687500Z Failed to start site. Revert by stopping site.
+2026-08-06T08:26:49.1693147Z State: Stopping, Action: StoppingSite, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:26:49, LastErrorDetails: Container exited with exit code 3 during startup after 40.0s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T08:26:49.1790551Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:26:49, LastErrorDetails: Container exited with exit code 3 during startup after 40.0s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T08:26:49.6647017Z Site container: webappkrant20260805_managedIdentity terminated during site startup.
+2026-08-06T08:26:49.6725424Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:26:49, LastErrorDetails: Container exited with exit code 3 during startup after 40.0s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T08:26:49.6728030Z Site: webappkrant20260805 stopped.
+2026-08-06T08:26:49.6826992Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:26:49, LastErrorDetails: Container exited with exit code 3 during startup after 40.0s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T08:26:50.5092241Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:26:49, LastErrorDetails: Container exited with exit code 3 during startup after 40.0s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T08:26:51.2614189Z Site: webappkrant20260805 will be blocked for 1 minutes till 08/06/2026 08:27:51
+2026-08-06T08:26:51.2616368Z State: Blocked, Action: StoppingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:26:49, LastErrorDetails: Container exited with exit code 3 during startup after 40.0s. Please inspect your container logs for more details., Details: Site: webappkrant20260805 will be blocked for 1 minutes till 08/06/2026 08:27:51, DetailsLevel: WARN
+2026-08-06T08:26:51.2730570Z State: Stopped, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:26:49, LastErrorDetails: Container exited with exit code 3 during startup after 40.0s. Please inspect your container logs for more details., Details: Site stopped at 08/06/2026 08:26:51 (UTC), DetailsLevel: WARN
+2026-08-06T08:26:52.0989537Z State: Stopped, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:26:49, LastErrorDetails: Container exited with exit code 3 during startup after 40.0s. Please inspect your container logs for more details., Details: Site stopped at 08/06/2026 08:26:51 (UTC), DetailsLevel: WARN
+2026-08-06T08:27:51.2527416Z Site: webappkrant20260805 is unblocked.
+2026-08-06T08:28:25.8126565Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:26:49, LastErrorDetails: Container exited with exit code 3 during startup after 40.0s. Please inspect your container logs for more details., Details: Site stopped at 08/06/2026 08:26:51 (UTC), DetailsLevel: WARN
+2026-08-06T08:28:28.8990422Z State: Starting, Action: StartingMsiContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:26:49, LastErrorDetails: Container exited with exit code 3 during startup after 40.0s. Please inspect your container logs for more details., Details: Site stopped at 08/06/2026 08:26:51 (UTC), DetailsLevel: WARN
+2026-08-06T08:28:46.1018715Z State: Starting, Action: StartingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:26:49, LastErrorDetails: Container exited with exit code 3 during startup after 40.0s. Please inspect your container logs for more details., Details: Site stopped at 08/06/2026 08:26:51 (UTC), DetailsLevel: WARN
+2026-08-06T08:28:46.1020881Z Container start method called.
+2026-08-06T08:28:46.1022668Z State: Starting, Action: PullingImage, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:26:49, LastErrorDetails: Container exited with exit code 3 during startup after 40.0s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.4:13209/appsvc/python:3.12_20260710.8.tuxprod for webappkrant20260805., DetailsLevel: INFO
+2026-08-06T08:28:46.1023617Z Establishing network.
+2026-08-06T08:28:46.1024456Z Pulling image: appsvc/python:3.12_20260710.8.tuxprod.
+2026-08-06T08:28:46.4517652Z Container is starting.
+2026-08-06T08:28:46.4522218Z State: Starting, Action: MountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:26:49, LastErrorDetails: Container exited with exit code 3 during startup after 40.0s. Please inspect your container logs for more details., Details: Mounting volumes for webappkrant20260805., DetailsLevel: INFO
+2026-08-06T08:28:46.4536132Z Establishing user namespace if not established already.
+2026-08-06T08:28:46.4636960Z Establishing network if not established already.
+2026-08-06T08:28:46.4638559Z Mounting volumes.
+2026-08-06T08:28:46.4639650Z Nested mountpoint 
+2026-08-06T08:28:46.4893285Z Nested mountpoint volatile/logs
+2026-08-06T08:28:46.5306633Z Nested mountpoint 
+2026-08-06T08:28:46.5311826Z Nested mountpoint 
+2026-08-06T08:28:46.6816653Z Nested mountpoint 
+2026-08-06T08:28:46.8665508Z Nested mountpoint 
+2026-08-06T08:28:47.2482283Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:26:49, LastErrorDetails: Container exited with exit code 3 during startup after 40.0s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for webappkrant20260805. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-08-06T08:28:47.2578025Z Creating container.
+2026-08-06T08:28:47.2580828Z Creating pipes for streaming container io.
+2026-08-06T08:28:47.2586589Z Creating stdout named pipe at /podr/container/pipe/ce4d2821dacb_webappkrant20260805/stdout_41a1486adc5a4bd0b9b1463cb28f7588.
+2026-08-06T08:28:47.2672662Z Successfully created stdout named pipe at: /podr/container/pipe/ce4d2821dacb_webappkrant20260805/stdout_41a1486adc5a4bd0b9b1463cb28f7588.
+2026-08-06T08:28:47.2680214Z Opening named pipe /podr/container/pipe/ce4d2821dacb_webappkrant20260805/stdout_41a1486adc5a4bd0b9b1463cb28f7588 for reading in non-blocking mode.
+2026-08-06T08:28:47.2756535Z Successfully opened named pipe: /podr/container/pipe/ce4d2821dacb_webappkrant20260805/stdout_41a1486adc5a4bd0b9b1463cb28f7588.
+2026-08-06T08:28:47.2775256Z Successfully removed non-blocking flag from /podr/container/pipe/ce4d2821dacb_webappkrant20260805/stdout_41a1486adc5a4bd0b9b1463cb28f7588.
+2026-08-06T08:28:47.2847990Z Creating stderr named pipe at /podr/container/pipe/ce4d2821dacb_webappkrant20260805/stderr_9b0d52c1547b455ca5d4dbc0f3b7fbfa.
+2026-08-06T08:28:47.2853497Z Successfully created stderr named pipe at: /podr/container/pipe/ce4d2821dacb_webappkrant20260805/stderr_9b0d52c1547b455ca5d4dbc0f3b7fbfa.
+2026-08-06T08:28:47.2855625Z Opening named pipe /podr/container/pipe/ce4d2821dacb_webappkrant20260805/stderr_9b0d52c1547b455ca5d4dbc0f3b7fbfa for reading in non-blocking mode.
+2026-08-06T08:28:47.2857259Z Successfully opened named pipe: /podr/container/pipe/ce4d2821dacb_webappkrant20260805/stderr_9b0d52c1547b455ca5d4dbc0f3b7fbfa.
+2026-08-06T08:28:47.2858401Z Successfully removed non-blocking flag from /podr/container/pipe/ce4d2821dacb_webappkrant20260805/stderr_9b0d52c1547b455ca5d4dbc0f3b7fbfa.
+2026-08-06T08:28:47.2860465Z Creating container with image: appsvc/python:3.12_20260710.8.tuxprod from registry: 10.1.0.4:13209 and fully qualified image name: 10.1.0.4:13209/appsvc/python:3.12_20260710.8.tuxprod
+2026-08-06T08:28:47.9743070Z Starting container: ce4d2821dacb_webappkrant20260805.
+2026-08-06T08:28:48.0537670Z Starting watchers and probes.
+2026-08-06T08:28:48.0706009Z Starting metrics collection.
+2026-08-06T08:28:48.0713597Z Container is running.
+2026-08-06T08:28:48.0714412Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:26:49, LastErrorDetails: Container exited with exit code 3 during startup after 40.0s. Please inspect your container logs for more details., Details: Container webappkrant20260805 successfully created and is running., DetailsLevel: INFO
+2026-08-06T08:28:48.5098591Z Container start method finished after 2407 ms.
+2026-08-06T08:28:48.5100759Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:26:49, LastErrorDetails: Container exited with exit code 3 during startup after 40.0s. Please inspect your container logs for more details., Details: Container webappkrant20260805 successfully created and is running., DetailsLevel: INFO
+2026-08-06T08:28:48.6238779Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:26:49, LastErrorDetails: Container exited with exit code 3 during startup after 40.0s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-08-06T08:29:20.6743588Z Container has finished running with exit code: 3.
+2026-08-06T08:29:20.6744636Z Container is terminating. Grace period: 5 seconds.
+2026-08-06T08:29:20.6768399Z Stop and delete container. Retry count = 0
+2026-08-06T08:29:20.6769204Z Stopping container: ce4d2821dacb_webappkrant20260805.
+2026-08-06T08:29:20.7933117Z Deleting container: ce4d2821dacb_webappkrant20260805. Retry count = 0
+2026-08-06T08:29:21.1468815Z Container spec TerminationMessagePolicy  path 
+2026-08-06T08:29:21.1470143Z Container is terminated. Total time elapsed: 472 ms.
+2026-08-06T08:29:21.1470917Z Site container: webappkrant20260805 terminated during site startup.
+2026-08-06T08:29:21.1471736Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:26:49, LastErrorDetails: Container exited with exit code 3 during startup after 40.0s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T08:29:21.6059685Z Site startup probe failed after 32.9747769 seconds.
+2026-08-06T08:29:22.3237854Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:29:22, LastErrorDetails: Container exited with exit code 3 during startup after 33.1s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T08:29:22.3646447Z Failed to start site. Revert by stopping site.
+2026-08-06T08:29:22.3721921Z State: Stopping, Action: StoppingSite, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:29:22, LastErrorDetails: Container exited with exit code 3 during startup after 33.1s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T08:29:22.3745349Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:29:22, LastErrorDetails: Container exited with exit code 3 during startup after 33.1s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T08:29:23.0712548Z Site container: webappkrant20260805_managedIdentity terminated during site startup.
+2026-08-06T08:29:23.0791393Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:29:22, LastErrorDetails: Container exited with exit code 3 during startup after 33.1s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T08:29:23.0799449Z Site: webappkrant20260805 stopped.
+2026-08-06T08:29:23.1081236Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:29:22, LastErrorDetails: Container exited with exit code 3 during startup after 33.1s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T08:29:23.7453132Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:29:22, LastErrorDetails: Container exited with exit code 3 during startup after 33.1s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T08:29:24.5404404Z Site: webappkrant20260805 will be blocked for 1 minutes till 08/06/2026 08:30:24
+2026-08-06T08:29:24.5407245Z State: Blocked, Action: StoppingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:29:22, LastErrorDetails: Container exited with exit code 3 during startup after 33.1s. Please inspect your container logs for more details., Details: Site: webappkrant20260805 will be blocked for 1 minutes till 08/06/2026 08:30:24, DetailsLevel: WARN
+2026-08-06T08:29:24.5415500Z State: Stopped, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:29:22, LastErrorDetails: Container exited with exit code 3 during startup after 33.1s. Please inspect your container logs for more details., Details: Site stopped at 08/06/2026 08:29:24 (UTC), DetailsLevel: WARN
+2026-08-06T08:29:25.2508655Z State: Stopped, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:29:22, LastErrorDetails: Container exited with exit code 3 during startup after 33.1s. Please inspect your container logs for more details., Details: Site stopped at 08/06/2026 08:29:24 (UTC), DetailsLevel: WARN
+2026-08-06T08:29:30.8269558Z State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:29:22, LastErrorDetails: Container exited with exit code 3 during startup after 33.1s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 08/06/2026 08:30:24, DetailsLevel: WARN
+2026-08-06T08:29:30.8270646Z Start site prohibitted because the site is being blocked.
+2026-08-06T08:30:24.5443238Z Site: webappkrant20260805 is unblocked.
+2026-08-06T08:30:26.7597893Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:29:22, LastErrorDetails: Container exited with exit code 3 during startup after 33.1s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 08/06/2026 08:30:24, DetailsLevel: WARN
+2026-08-06T08:30:30.9206476Z State: Starting, Action: StartingMsiContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:29:22, LastErrorDetails: Container exited with exit code 3 during startup after 33.1s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 08/06/2026 08:30:24, DetailsLevel: WARN
+2026-08-06T08:30:47.8979258Z State: Starting, Action: StartingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:29:22, LastErrorDetails: Container exited with exit code 3 during startup after 33.1s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 08/06/2026 08:30:24, DetailsLevel: WARN
+2026-08-06T08:30:47.9440080Z Container start method called.
+2026-08-06T08:30:47.9711519Z State: Starting, Action: PullingImage, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:29:22, LastErrorDetails: Container exited with exit code 3 during startup after 33.1s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.4:13209/appsvc/python:3.12_20260710.8.tuxprod for webappkrant20260805., DetailsLevel: INFO
+2026-08-06T08:30:47.9713995Z Establishing network.
+2026-08-06T08:30:47.9722885Z Pulling image: appsvc/python:3.12_20260710.8.tuxprod.
+2026-08-06T08:30:48.2832943Z Container is starting.
+2026-08-06T08:30:48.2834445Z State: Starting, Action: MountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:29:22, LastErrorDetails: Container exited with exit code 3 during startup after 33.1s. Please inspect your container logs for more details., Details: Mounting volumes for webappkrant20260805., DetailsLevel: INFO
+2026-08-06T08:30:48.2836063Z Establishing user namespace if not established already.
+2026-08-06T08:30:48.2855536Z Establishing network if not established already.
+2026-08-06T08:30:48.2858231Z Mounting volumes.
+2026-08-06T08:30:48.2935623Z Nested mountpoint 
+2026-08-06T08:30:48.3528316Z Nested mountpoint volatile/logs
+2026-08-06T08:30:48.4426719Z Nested mountpoint 
+2026-08-06T08:30:48.4738345Z Nested mountpoint 
+2026-08-06T08:30:48.6805890Z Nested mountpoint 
+2026-08-06T08:30:48.8067300Z Nested mountpoint 
+2026-08-06T08:30:49.1179609Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:29:22, LastErrorDetails: Container exited with exit code 3 during startup after 33.1s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for webappkrant20260805. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-08-06T08:30:49.1180696Z Creating container.
+2026-08-06T08:30:49.1181278Z Creating pipes for streaming container io.
+2026-08-06T08:30:49.1198804Z Creating stdout named pipe at /podr/container/pipe/823579984ba7_webappkrant20260805/stdout_a4e878d0729c4ec58bf4db3cdcd5b3f1.
+2026-08-06T08:30:49.1200666Z Successfully created stdout named pipe at: /podr/container/pipe/823579984ba7_webappkrant20260805/stdout_a4e878d0729c4ec58bf4db3cdcd5b3f1.
+2026-08-06T08:30:49.1201250Z Opening named pipe /podr/container/pipe/823579984ba7_webappkrant20260805/stdout_a4e878d0729c4ec58bf4db3cdcd5b3f1 for reading in non-blocking mode.
+2026-08-06T08:30:49.1202044Z Successfully opened named pipe: /podr/container/pipe/823579984ba7_webappkrant20260805/stdout_a4e878d0729c4ec58bf4db3cdcd5b3f1.
+2026-08-06T08:30:49.1202601Z Successfully removed non-blocking flag from /podr/container/pipe/823579984ba7_webappkrant20260805/stdout_a4e878d0729c4ec58bf4db3cdcd5b3f1.
+2026-08-06T08:30:49.1291443Z Creating stderr named pipe at /podr/container/pipe/823579984ba7_webappkrant20260805/stderr_92cc5140c55b443c9ba166e59c52960d.
+2026-08-06T08:30:49.1293165Z Successfully created stderr named pipe at: /podr/container/pipe/823579984ba7_webappkrant20260805/stderr_92cc5140c55b443c9ba166e59c52960d.
+2026-08-06T08:30:49.1294261Z Opening named pipe /podr/container/pipe/823579984ba7_webappkrant20260805/stderr_92cc5140c55b443c9ba166e59c52960d for reading in non-blocking mode.
+2026-08-06T08:30:49.1295291Z Successfully opened named pipe: /podr/container/pipe/823579984ba7_webappkrant20260805/stderr_92cc5140c55b443c9ba166e59c52960d.
+2026-08-06T08:30:49.1295965Z Successfully removed non-blocking flag from /podr/container/pipe/823579984ba7_webappkrant20260805/stderr_92cc5140c55b443c9ba166e59c52960d.
+2026-08-06T08:30:49.1304827Z Creating container with image: appsvc/python:3.12_20260710.8.tuxprod from registry: 10.1.0.4:13209 and fully qualified image name: 10.1.0.4:13209/appsvc/python:3.12_20260710.8.tuxprod
+2026-08-06T08:30:50.0800157Z Starting container: 823579984ba7_webappkrant20260805.
+2026-08-06T08:30:50.2348064Z Starting watchers and probes.
+2026-08-06T08:30:50.2420210Z Starting metrics collection.
+2026-08-06T08:30:50.2422186Z Container is running.
+2026-08-06T08:30:50.2423017Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:29:22, LastErrorDetails: Container exited with exit code 3 during startup after 33.1s. Please inspect your container logs for more details., Details: Container webappkrant20260805 successfully created and is running., DetailsLevel: INFO
+2026-08-06T08:30:50.5827771Z Container start method finished after 2638 ms.
+2026-08-06T08:30:50.5829445Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:29:22, LastErrorDetails: Container exited with exit code 3 during startup after 33.1s. Please inspect your container logs for more details., Details: Container webappkrant20260805 successfully created and is running., DetailsLevel: INFO
+2026-08-06T08:30:50.5829727Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:29:22, LastErrorDetails: Container exited with exit code 3 during startup after 33.1s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-08-06T08:31:28.3034934Z Container has finished running with exit code: 3.
+2026-08-06T08:31:28.3048658Z Container is terminating. Grace period: 5 seconds.
+2026-08-06T08:31:28.3134851Z Stop and delete container. Retry count = 0
+2026-08-06T08:31:28.3136439Z Stopping container: 823579984ba7_webappkrant20260805.
+2026-08-06T08:31:28.4346836Z Deleting container: 823579984ba7_webappkrant20260805. Retry count = 0
+2026-08-06T08:31:28.9703271Z Container spec TerminationMessagePolicy  path 
+2026-08-06T08:31:29.1301772Z Container is terminated. Total time elapsed: 822 ms.
+2026-08-06T08:31:29.1381124Z Site container: webappkrant20260805 terminated during site startup.
+2026-08-06T08:31:29.1386196Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:29:22, LastErrorDetails: Container exited with exit code 3 during startup after 33.1s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T08:31:29.2723504Z Site startup probe failed after 38.6877313 seconds.
+2026-08-06T08:31:29.8547092Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:31:29, LastErrorDetails: Container exited with exit code 3 during startup after 38.7s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T08:31:29.8924083Z Failed to start site. Revert by stopping site.
+2026-08-06T08:31:29.8943020Z State: Stopping, Action: StoppingSite, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:31:29, LastErrorDetails: Container exited with exit code 3 during startup after 38.7s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T08:31:29.9006782Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:31:29, LastErrorDetails: Container exited with exit code 3 during startup after 38.7s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T08:31:30.3538431Z Site container: webappkrant20260805_managedIdentity terminated during site startup.
+2026-08-06T08:31:30.3547821Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:31:29, LastErrorDetails: Container exited with exit code 3 during startup after 38.7s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T08:31:30.3721718Z Site: webappkrant20260805 stopped.
+2026-08-06T08:33:00.7639981Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:31:29, LastErrorDetails: Container exited with exit code 3 during startup after 38.7s. Please inspect your container logs for more details., Details: Site stopped at 08/06/2026 08:31:31 (UTC), DetailsLevel: WARN
+2026-08-06T08:33:06.0658540Z State: Starting, Action: StartingMsiContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:31:29, LastErrorDetails: Container exited with exit code 3 during startup after 38.7s. Please inspect your container logs for more details., Details: Site stopped at 08/06/2026 08:31:31 (UTC), DetailsLevel: WARN
+2026-08-06T08:33:32.5535044Z State: Starting, Action: StartingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:31:29, LastErrorDetails: Container exited with exit code 3 during startup after 38.7s. Please inspect your container logs for more details., Details: Site stopped at 08/06/2026 08:31:31 (UTC), DetailsLevel: WARN
+2026-08-06T08:33:32.5706867Z Container start method called.
+2026-08-06T08:33:32.5713397Z State: Starting, Action: PullingImage, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:31:29, LastErrorDetails: Container exited with exit code 3 during startup after 38.7s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.4:13209/appsvc/python:3.12_20260710.8.tuxprod for webappkrant20260805., DetailsLevel: INFO
+2026-08-06T08:33:32.5714892Z Establishing network.
+2026-08-06T08:33:32.5718491Z Pulling image: appsvc/python:3.12_20260710.8.tuxprod.
+2026-08-06T08:33:33.1722098Z Container is starting.
+2026-08-06T08:33:33.1723013Z State: Starting, Action: MountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:31:29, LastErrorDetails: Container exited with exit code 3 during startup after 38.7s. Please inspect your container logs for more details., Details: Mounting volumes for webappkrant20260805., DetailsLevel: INFO
+2026-08-06T08:33:33.1723594Z Establishing user namespace if not established already.
+2026-08-06T08:33:33.1724141Z Establishing network if not established already.
+2026-08-06T08:33:33.1725012Z Mounting volumes.
+2026-08-06T08:33:33.1727408Z Nested mountpoint 
+2026-08-06T08:33:33.2601077Z Nested mountpoint volatile/logs
+2026-08-06T08:33:33.3103718Z Nested mountpoint 
+2026-08-06T08:33:33.3295581Z Nested mountpoint 
+2026-08-06T08:33:33.3396197Z Nested mountpoint 
+2026-08-06T08:33:33.4187666Z Nested mountpoint 
+2026-08-06T08:33:34.0953491Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:31:29, LastErrorDetails: Container exited with exit code 3 during startup after 38.7s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for webappkrant20260805. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-08-06T08:33:34.0956002Z Creating container.
+2026-08-06T08:33:34.0956770Z Creating pipes for streaming container io.
+2026-08-06T08:33:34.0957411Z Creating stdout named pipe at /podr/container/pipe/29974a071648_webappkrant20260805/stdout_3a7a45586ad64f45ae74a5322dca5fc8.
+2026-08-06T08:33:34.0959239Z Successfully created stdout named pipe at: /podr/container/pipe/29974a071648_webappkrant20260805/stdout_3a7a45586ad64f45ae74a5322dca5fc8.
+2026-08-06T08:33:34.0959764Z Opening named pipe /podr/container/pipe/29974a071648_webappkrant20260805/stdout_3a7a45586ad64f45ae74a5322dca5fc8 for reading in non-blocking mode.
+2026-08-06T08:33:34.0960582Z Successfully opened named pipe: /podr/container/pipe/29974a071648_webappkrant20260805/stdout_3a7a45586ad64f45ae74a5322dca5fc8.
+2026-08-06T08:33:34.0961103Z Successfully removed non-blocking flag from /podr/container/pipe/29974a071648_webappkrant20260805/stdout_3a7a45586ad64f45ae74a5322dca5fc8.
+2026-08-06T08:33:34.0988278Z Creating stderr named pipe at /podr/container/pipe/29974a071648_webappkrant20260805/stderr_7f583909809043ca96bad1982745932f.
+2026-08-06T08:33:34.1664696Z Successfully created stderr named pipe at: /podr/container/pipe/29974a071648_webappkrant20260805/stderr_7f583909809043ca96bad1982745932f.
+2026-08-06T08:33:34.1667575Z Opening named pipe /podr/container/pipe/29974a071648_webappkrant20260805/stderr_7f583909809043ca96bad1982745932f for reading in non-blocking mode.
+2026-08-06T08:33:34.1669733Z Successfully opened named pipe: /podr/container/pipe/29974a071648_webappkrant20260805/stderr_7f583909809043ca96bad1982745932f.
+2026-08-06T08:33:34.1671627Z Successfully removed non-blocking flag from /podr/container/pipe/29974a071648_webappkrant20260805/stderr_7f583909809043ca96bad1982745932f.
+2026-08-06T08:33:34.2331631Z Creating container with image: appsvc/python:3.12_20260710.8.tuxprod from registry: 10.1.0.4:13209 and fully qualified image name: 10.1.0.4:13209/appsvc/python:3.12_20260710.8.tuxprod
+2026-08-06T08:33:35.4020375Z Starting container: 29974a071648_webappkrant20260805.
+2026-08-06T08:33:35.5027529Z Starting watchers and probes.
+2026-08-06T08:33:35.5030674Z Starting metrics collection.
+2026-08-06T08:33:35.5032367Z Container is running.
+2026-08-06T08:33:35.5033152Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:31:29, LastErrorDetails: Container exited with exit code 3 during startup after 38.7s. Please inspect your container logs for more details., Details: Container webappkrant20260805 successfully created and is running., DetailsLevel: INFO
+2026-08-06T08:33:35.7690287Z Container start method finished after 3198 ms.
+2026-08-06T08:33:35.7692390Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:31:29, LastErrorDetails: Container exited with exit code 3 during startup after 38.7s. Please inspect your container logs for more details., Details: Container webappkrant20260805 successfully created and is running., DetailsLevel: INFO
+2026-08-06T08:33:35.7692639Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:31:29, LastErrorDetails: Container exited with exit code 3 during startup after 38.7s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-08-06T08:34:22.2865353Z Container has finished running with exit code: 3.
+2026-08-06T08:34:22.2879086Z Container is terminating. Grace period: 5 seconds.
+2026-08-06T08:34:22.2963640Z Stop and delete container. Retry count = 0
+2026-08-06T08:34:22.2968015Z Stopping container: 29974a071648_webappkrant20260805.
+2026-08-06T08:34:22.3974410Z Deleting container: 29974a071648_webappkrant20260805. Retry count = 0
+2026-08-06T08:34:22.7665450Z Container spec TerminationMessagePolicy  path 
+2026-08-06T08:34:22.8260902Z Container is terminated. Total time elapsed: 478 ms.
+2026-08-06T08:34:22.8519742Z Site container: webappkrant20260805 terminated during site startup.
+2026-08-06T08:34:22.8521785Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:31:29, LastErrorDetails: Container exited with exit code 3 during startup after 38.7s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T08:34:23.1207276Z Site startup probe failed after 47.2506021 seconds.
+2026-08-06T08:34:23.4869011Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:34:23, LastErrorDetails: Container exited with exit code 3 during startup after 47.3s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T08:34:23.5567833Z Failed to start site. Revert by stopping site.
+2026-08-06T08:34:23.5569259Z State: Stopping, Action: StoppingSite, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:34:23, LastErrorDetails: Container exited with exit code 3 during startup after 47.3s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T08:34:23.5739944Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:34:23, LastErrorDetails: Container exited with exit code 3 during startup after 47.3s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T08:34:24.5556558Z Site container: webappkrant20260805_managedIdentity terminated during site startup.
+2026-08-06T08:34:24.5637231Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:34:23, LastErrorDetails: Container exited with exit code 3 during startup after 47.3s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T08:34:24.5650870Z Site: webappkrant20260805 stopped.
+2026-08-06T08:34:24.5749427Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:34:23, LastErrorDetails: Container exited with exit code 3 during startup after 47.3s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T08:34:25.3487290Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:34:23, LastErrorDetails: Container exited with exit code 3 during startup after 47.3s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T08:34:26.2873197Z State: Stopped, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:34:23, LastErrorDetails: Container exited with exit code 3 during startup after 47.3s. Please inspect your container logs for more details., Details: Site stopped at 08/06/2026 08:34:26 (UTC), DetailsLevel: ERR
+2026-08-06T08:34:27.4909266Z State: Stopped, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:34:23, LastErrorDetails: Container exited with exit code 3 during startup after 47.3s. Please inspect your container logs for more details., Details: Site stopped at 08/06/2026 08:34:26 (UTC), DetailsLevel: ERR
+2026-08-06T08:34:55.0107527Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:34:23, LastErrorDetails: Container exited with exit code 3 during startup after 47.3s. Please inspect your container logs for more details., Details: Site stopped at 08/06/2026 08:34:26 (UTC), DetailsLevel: ERR
+2026-08-06T08:34:58.1497832Z State: Starting, Action: StartingMsiContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:34:23, LastErrorDetails: Container exited with exit code 3 during startup after 47.3s. Please inspect your container logs for more details., Details: Site stopped at 08/06/2026 08:34:26 (UTC), DetailsLevel: ERR
+2026-08-06T08:35:17.9793031Z State: Starting, Action: StartingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:34:23, LastErrorDetails: Container exited with exit code 3 during startup after 47.3s. Please inspect your container logs for more details., Details: Site stopped at 08/06/2026 08:34:26 (UTC), DetailsLevel: ERR
+2026-08-06T08:35:17.9794477Z Container start method called.
+2026-08-06T08:35:17.9795354Z State: Starting, Action: PullingImage, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:34:23, LastErrorDetails: Container exited with exit code 3 during startup after 47.3s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.4:13209/appsvc/python:3.12_20260710.8.tuxprod for webappkrant20260805., DetailsLevel: INFO
+2026-08-06T08:35:17.9796340Z Establishing network.
+2026-08-06T08:35:17.9797518Z Pulling image: appsvc/python:3.12_20260710.8.tuxprod.
+2026-08-06T08:35:18.4309353Z Container is starting.
+2026-08-06T08:35:18.4310161Z State: Starting, Action: MountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:34:23, LastErrorDetails: Container exited with exit code 3 during startup after 47.3s. Please inspect your container logs for more details., Details: Mounting volumes for webappkrant20260805., DetailsLevel: INFO
+2026-08-06T08:35:18.4310833Z Establishing user namespace if not established already.
+2026-08-06T08:35:18.4311397Z Establishing network if not established already.
+2026-08-06T08:35:18.4312059Z Mounting volumes.
+2026-08-06T08:35:18.4313053Z Nested mountpoint 
+2026-08-06T08:35:18.5571385Z Nested mountpoint volatile/logs
+2026-08-06T08:35:18.6463119Z Nested mountpoint 
+2026-08-06T08:35:18.7621144Z Nested mountpoint 
+2026-08-06T08:35:18.9273018Z Nested mountpoint 
+2026-08-06T08:35:19.1648614Z Nested mountpoint 
+2026-08-06T08:35:19.7647431Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:34:23, LastErrorDetails: Container exited with exit code 3 during startup after 47.3s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for webappkrant20260805. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-08-06T08:35:19.7648408Z Creating container.
+2026-08-06T08:35:19.7648994Z Creating pipes for streaming container io.
+2026-08-06T08:35:19.7649605Z Creating stdout named pipe at /podr/container/pipe/dfef5091f42a_webappkrant20260805/stdout_8c6ffa4b77bc428c990b483d55e652bf.
+2026-08-06T08:35:19.7651343Z Successfully created stdout named pipe at: /podr/container/pipe/dfef5091f42a_webappkrant20260805/stdout_8c6ffa4b77bc428c990b483d55e652bf.
+2026-08-06T08:35:19.7651862Z Opening named pipe /podr/container/pipe/dfef5091f42a_webappkrant20260805/stdout_8c6ffa4b77bc428c990b483d55e652bf for reading in non-blocking mode.
+2026-08-06T08:35:19.7652652Z Successfully opened named pipe: /podr/container/pipe/dfef5091f42a_webappkrant20260805/stdout_8c6ffa4b77bc428c990b483d55e652bf.
+2026-08-06T08:35:19.7653161Z Successfully removed non-blocking flag from /podr/container/pipe/dfef5091f42a_webappkrant20260805/stdout_8c6ffa4b77bc428c990b483d55e652bf.
+2026-08-06T08:35:19.8545361Z Creating stderr named pipe at /podr/container/pipe/dfef5091f42a_webappkrant20260805/stderr_2328ce6ad06f4a159f4645462f76847d.
+2026-08-06T08:35:19.8644676Z Successfully created stderr named pipe at: /podr/container/pipe/dfef5091f42a_webappkrant20260805/stderr_2328ce6ad06f4a159f4645462f76847d.
+2026-08-06T08:35:19.8646238Z Opening named pipe /podr/container/pipe/dfef5091f42a_webappkrant20260805/stderr_2328ce6ad06f4a159f4645462f76847d for reading in non-blocking mode.
+2026-08-06T08:35:19.8647671Z Successfully opened named pipe: /podr/container/pipe/dfef5091f42a_webappkrant20260805/stderr_2328ce6ad06f4a159f4645462f76847d.
+2026-08-06T08:35:19.8648340Z Successfully removed non-blocking flag from /podr/container/pipe/dfef5091f42a_webappkrant20260805/stderr_2328ce6ad06f4a159f4645462f76847d.
+2026-08-06T08:35:19.8720747Z Creating container with image: appsvc/python:3.12_20260710.8.tuxprod from registry: 10.1.0.4:13209 and fully qualified image name: 10.1.0.4:13209/appsvc/python:3.12_20260710.8.tuxprod
+2026-08-06T08:35:21.4430320Z Starting container: dfef5091f42a_webappkrant20260805.
+2026-08-06T08:35:21.6307353Z Starting watchers and probes.
+2026-08-06T08:35:21.7064421Z Starting metrics collection.
+2026-08-06T08:35:21.7065599Z Container is running.
+2026-08-06T08:35:21.7066427Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:34:23, LastErrorDetails: Container exited with exit code 3 during startup after 47.3s. Please inspect your container logs for more details., Details: Container webappkrant20260805 successfully created and is running., DetailsLevel: INFO
+2026-08-06T08:35:22.3512070Z Container start method finished after 4371 ms.
+2026-08-06T08:35:22.3513603Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:34:23, LastErrorDetails: Container exited with exit code 3 during startup after 47.3s. Please inspect your container logs for more details., Details: Container webappkrant20260805 successfully created and is running., DetailsLevel: INFO
+2026-08-06T08:35:22.3513908Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:34:23, LastErrorDetails: Container exited with exit code 3 during startup after 47.3s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-08-06T08:35:59.4338390Z Container has finished running with exit code: 3.
+2026-08-06T08:35:59.4339854Z Container is terminating. Grace period: 5 seconds.
+2026-08-06T08:35:59.4343976Z Stop and delete container. Retry count = 0
+2026-08-06T08:35:59.4344628Z Stopping container: dfef5091f42a_webappkrant20260805.
+2026-08-06T08:35:59.5714453Z Deleting container: dfef5091f42a_webappkrant20260805. Retry count = 0
+2026-08-06T08:35:59.9206793Z Container spec TerminationMessagePolicy  path 
+2026-08-06T08:35:59.9211311Z Container is terminated. Total time elapsed: 486 ms.
+2026-08-06T08:35:59.9216615Z Site container: webappkrant20260805 terminated during site startup.
+2026-08-06T08:35:59.9219477Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:34:23, LastErrorDetails: Container exited with exit code 3 during startup after 47.3s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T08:36:00.1084955Z Site startup probe failed after 37.7566489 seconds.
+2026-08-06T08:36:00.8685752Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:36:00, LastErrorDetails: Container exited with exit code 3 during startup after 38.3s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T08:36:00.9072470Z Failed to start site. Revert by stopping site.
+2026-08-06T08:36:00.9073969Z State: Stopping, Action: StoppingSite, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:36:00, LastErrorDetails: Container exited with exit code 3 during startup after 38.3s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T08:36:00.9075591Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:36:00, LastErrorDetails: Container exited with exit code 3 during startup after 38.3s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T08:36:01.4679211Z Site container: webappkrant20260805_managedIdentity terminated during site startup.
+2026-08-06T08:36:01.4693647Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/06/2026 08:36:00, LastErrorDetails: Container exited with exit code 3 during startup after 38.3s. Please inspect your container logs for more details., Details: Site container: webappkrant20260805 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-06T08:36:01.4754846Z Site: webappkrant20260805 stopped.

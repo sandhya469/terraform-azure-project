@@ -57,3 +57,8 @@ variable "appserviceplan_name" {
 variable "appservice_name" {
   type = string
 }
+
+
+
+
+
