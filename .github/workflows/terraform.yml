@@ -10,8 +10,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+
       - name: Checkout Repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Azure Login
         uses: azure/login@v2
@@ -29,6 +32,14 @@ jobs:
 
       - name: Terraform Plan
         run: terraform plan
+
+      # ----------------------------
+      # SonarCloud Scan
+      # ----------------------------
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarqube-scan-action@v5
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
       - name: Terraform Apply
         run: terraform apply -auto-approve
