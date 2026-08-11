@@ -26,3 +26,8 @@ jobs:
       - name: Validate Python code
         run: |
           python -m py_compile app/app.py
+
+        - name: Run application test
+        run: |
+          pip install pytest
+          pytest
